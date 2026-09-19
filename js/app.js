@@ -5,6 +5,7 @@
 
   var ALL = window.QUESTIONS || [];
   var HANDBOOK = window.HANDBOOK || [];
+  var GUIDE = window.GUIDE || [];
   var MOCK_SIZE = 45;      // questions in a mock test
   var MOCK_PASS = 41;      // correct answers needed to pass
   var LETTERS = ['A', 'B', 'C', 'D'];
@@ -31,7 +32,7 @@
   var store = load();
 
   function load() {
-    var blank = { stats: {}, fav: [], shuffle: false, tab: 'dkt', hbSel: null };
+    var blank = { stats: {}, fav: [], shuffle: false, tab: 'dkt', hbSel: null, gdSel: null };
     try {
       var raw = localStorage.getItem(STORE_KEY);
       if (!raw) return blank;
@@ -40,8 +41,9 @@
         stats: parsed.stats || {},
         fav: parsed.fav || [],
         shuffle: !!parsed.shuffle,
-        tab: parsed.tab === 'handbook' ? 'handbook' : 'dkt',
-        hbSel: typeof parsed.hbSel === 'string' ? parsed.hbSel : null
+        tab: (parsed.tab === 'handbook' || parsed.tab === 'guide') ? parsed.tab : 'dkt',
+        hbSel: typeof parsed.hbSel === 'string' ? parsed.hbSel : null,
+        gdSel: typeof parsed.gdSel === 'string' ? parsed.gdSel : null
       };
     } catch (err) {
       return blank;
@@ -247,7 +249,7 @@
     $('btn-fav').hidden = (which !== 'quiz');
     $('progressbar').hidden = (which !== 'quiz');
     $('hometabs').hidden = (which !== 'home');
-    if (which === 'home') $('topbar-title').textContent = store.tab === 'handbook' ? 'Road User Handbook' : 'DKT Practice';
+    if (which === 'home') $('topbar-title').textContent = tabTitle(store.tab);
     if (which === 'result') $('topbar-title').textContent = 'Results';
     window.scrollTo(0, 0);
   }
@@ -310,25 +312,48 @@
     return '&#128218;';                                      // book (general knowledge)
   }
 
-  /* ---------------- home tabs (DKT / handbook) ---------------- */
+  /* ---------------- home tabs (DKT / handbook / guide) ---------------- */
+
+  function tabTitle(tab) {
+    if (tab === 'handbook') return 'Road User Handbook';
+    if (tab === 'guide') return 'Guide to the Driving Test';
+    return 'DKT Practice';
+  }
+
+  // The handbook viewer's DOM/CSS (hbnav/hbcontent/hb-prev/hb-next) is shared between
+  // the 'handbook' and 'guide' tabs - currentBook()/currentSelKey() pick which dataset
+  // and which remembered selection key it reads/writes, so only one book tab is ever
+  // rendered into that shared DOM at a time.
+  function currentBook() {
+    return store.tab === 'guide' ? GUIDE : HANDBOOK;
+  }
+
+  function currentSelKey() {
+    return store.tab === 'guide' ? 'gdSel' : 'hbSel';
+  }
 
   function showTab(tab) {
-    store.tab = (tab === 'handbook') ? 'handbook' : 'dkt';
+    store.tab = (tab === 'handbook' || tab === 'guide') ? tab : 'dkt';
     save();
+    var isBook = store.tab !== 'dkt';
     $('home-dkt').hidden = store.tab !== 'dkt';
-    $('home-handbook').hidden = store.tab !== 'handbook';
-    $('app').classList.toggle('app--wide', store.tab === 'handbook');
-    $('hometabs').classList.toggle('app--wide', store.tab === 'handbook');
+    $('home-handbook').hidden = !isBook;
+    $('app').classList.toggle('app--wide', isBook);
+    $('hometabs').classList.toggle('app--wide', isBook);
     Array.prototype.forEach.call(document.querySelectorAll('.hometabs__btn'), function (btn) {
       var active = btn.getAttribute('data-tab') === store.tab;
       btn.classList.toggle('is-active', active);
       btn.setAttribute('aria-selected', active ? 'true' : 'false');
     });
-    $('topbar-title').textContent = store.tab === 'handbook' ? 'Road User Handbook' : 'DKT Practice';
-    if (store.tab === 'handbook') centerActiveHandbookNavLink();
+    $('topbar-title').textContent = tabTitle(store.tab);
+    if (isBook) {
+      renderHandbookNav();
+      initHandbookSelection();
+      centerActiveHandbookNavLink();
+    }
   }
 
-  /* ---------------- handbook ---------------- */
+  /* ---------------- handbook / guide (shared book viewer) ---------------- */
 
   // Chapters are collapsible toggles; only the chapter holding the active topic
   // starts expanded, so the sidebar reads as a scannable list of chapters rather
@@ -336,7 +361,7 @@
   function renderHandbookNav() {
     var nav = $('hbnav');
     nav.innerHTML = '';
-    HANDBOOK.forEach(function (chapter, cIdx) {
+    currentBook().forEach(function (chapter, cIdx) {
       var group = document.createElement('div');
       group.className = 'hbnav__group';
 
@@ -395,12 +420,12 @@
   // Shows one topic's full content in the content pane - the pane holds exactly one
   // topic at a time (not an accordion sharing space with the rest of the chapter).
   function selectHandbookSection(cIdx, sIdx) {
-    var chapter = HANDBOOK[cIdx];
+    var chapter = currentBook()[cIdx];
     if (!chapter) return;
     var section = chapter.sections[sIdx];
     if (!section) return;
 
-    store.hbSel = cIdx + ':' + sIdx;
+    store[currentSelKey()] = cIdx + ':' + sIdx;
     save();
 
     expandHandbookChapter(cIdx);
@@ -593,17 +618,18 @@
   // Walks to the previous/next subsection across chapter boundaries (dir is -1 or 1);
   // returns null past the very first or very last subsection in the whole handbook.
   function getAdjacentHandbookSection(cIdx, sIdx, dir) {
-    var chapter = HANDBOOK[cIdx];
+    var book = currentBook();
+    var chapter = book[cIdx];
     if (!chapter) return null;
     var newSIdx = sIdx + dir;
     if (newSIdx >= 0 && newSIdx < chapter.sections.length) return { cIdx: cIdx, sIdx: newSIdx };
     var newCIdx = cIdx + dir;
-    if (!HANDBOOK[newCIdx]) return null;
-    return { cIdx: newCIdx, sIdx: dir > 0 ? 0 : HANDBOOK[newCIdx].sections.length - 1 };
+    if (!book[newCIdx]) return null;
+    return { cIdx: newCIdx, sIdx: dir > 0 ? 0 : book[newCIdx].sections.length - 1 };
   }
 
   function goToAdjacentHandbookSection(dir) {
-    var sel = (store.hbSel || '0:0').split(':');
+    var sel = (store[currentSelKey()] || '0:0').split(':');
     var target = getAdjacentHandbookSection(Number(sel[0]) || 0, Number(sel[1]) || 0, dir);
     if (target) selectHandbookSection(target.cIdx, target.sIdx);
   }
@@ -633,11 +659,12 @@
 
   // Resume on the last topic browsed, if any, otherwise the handbook's first topic.
   function initHandbookSelection() {
-    if (!HANDBOOK.length) return;
-    var sel = (store.hbSel || '0:0').split(':');
+    var book = currentBook();
+    if (!book.length) return;
+    var sel = (store[currentSelKey()] || '0:0').split(':');
     var cIdx = Number(sel[0]) || 0;
     var sIdx = Number(sel[1]) || 0;
-    if (!HANDBOOK[cIdx] || !HANDBOOK[cIdx].sections[sIdx]) { cIdx = 0; sIdx = 0; }
+    if (!book[cIdx] || !book[cIdx].sections[sIdx]) { cIdx = 0; sIdx = 0; }
     selectHandbookSection(cIdx, sIdx);
   }
 
@@ -973,7 +1000,7 @@
 
   $('btn-reset').addEventListener('click', function () {
     if (!window.confirm('Clear all your answers, stats and favourites?')) return;
-    store = { stats: {}, fav: [], shuffle: store.shuffle, tab: store.tab };
+    store = { stats: {}, fav: [], shuffle: store.shuffle, tab: store.tab, hbSel: store.hbSel, gdSel: store.gdSel };
     save();
     renderHome();
   });
@@ -999,8 +1026,6 @@
     $('view-home').innerHTML = '<p>Could not load the questions. Make sure <code>data/questions.js</code> sits next to this page.</p>';
   } else {
     renderHome();
-    renderHandbookNav();
-    initHandbookSelection();
     showTab(store.tab);
     show('home');
   }
