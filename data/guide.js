@@ -397,14 +397,14 @@ window.GUIDE = [
               ["9", "🧠 Failing to exercise due care to avoid an accident"],
               ["10", "🚑 Failing to give way to an emergency vehicle"],
               ["11", "👮 Disobeying directions from police, traffic controllers or pilot vehicles"],
-              ["12", "↪️ Frequently not signalling — before turning, leaving the kerb or a parking space (5+ seconds), changing lanes, or exiting a roundabout"],
+              ["12", "↪️ Frequently not signalling — before turning, leaving the kerb or a parking space (5+ seconds), changing lanes, or exiting a roundabout <mark>3 errors</mark>"],
               ["13", "🙅 Refusing to attempt any part of the test"],
               ["14", "🔁 Repeated or deliberate failure to follow the testing officer's directions"],
               ["15", "🚧 Unreasonably obstructing other vehicles/pedestrians — e.g. blocking an intersection, or driving well below the limit unnecessarily"],
               ["16", "🤫 Receiving external advice or instruction at any point from signing the score sheet onward"],
               ["17", "🅿️ Not parking to the required standard — more than 1m from the kerb, wheels on/over marked lines, or reversing more than 7m during a reverse park"],
               ["18", "↔️ Failing to maintain a safe following distance"],
-              ["19", "👁️ Frequently missing observation checks — blind spots when leaving/returning to the kerb, merging/diverging/changing lanes, reversing, turning at intersections, or crossing roundabout lanes on exit"]
+              ["19", "👁️ Frequently missing observation checks — blind spots when leaving/returning to the kerb, merging/diverging/changing lanes, reversing, turning at intersections, or crossing roundabout lanes on exit <mark>3 errors</mark>"]
             ]
           },
           {

@@ -290,11 +290,15 @@
       btn.setAttribute('data-section', cat);
       btn.innerHTML =
         '<span class="card__icon">' + iconFor(cat) + '</span>' +
-        '<span class="card__body"><strong></strong><small></small></span>' +
+        '<span class="card__body"><strong></strong><small class="card__stats"></small></span>' +
         '<span class="ring ring--split card__ring"><span></span></span>';
       btn.querySelector('strong').textContent = catLabel(cat);
-      btn.querySelector('small').textContent =
-        qs.length + ' questions' + ((prog.right + prog.wrong) ? ' · ' + prog.right + ' correct, ' + prog.wrong + ' incorrect' : '');
+      btn.querySelector('small').innerHTML =
+        '<span class="card__stat card__stat--q">?' + qs.length + '</span>' +
+        ((prog.right + prog.wrong) ?
+          '<span class="card__stat card__stat--right">&#10003;' + prog.right + '</span>' +
+          '<span class="card__stat card__stat--wrong">&#10007;' + prog.wrong + '</span>'
+          : '');
       setRingSplit(btn.querySelector('.ring'), btn.querySelector('.ring span'), prog);
       list.appendChild(btn);
     });
@@ -587,7 +591,7 @@
         var tr = document.createElement('tr');
         row.forEach(function (cell) {
           var td = document.createElement('td');
-          td.textContent = cell;
+          td.innerHTML = cell;   // table data is hand-authored, not user input - allows an occasional <mark> for emphasis
           tr.appendChild(td);
         });
         tbody.appendChild(tr);
