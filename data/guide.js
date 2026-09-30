@@ -38,9 +38,9 @@ window.GUIDE = [
               ["🚧 Road works"],
               ["🚶 Pedestrians on the road"],
               ["🚌 A bus picking up or dropping off passengers"],
-              ["⚡ Zigzag lines before a pedestrian crossing"],
+              ["⚡ A zigzag line when approaching a pedestrian crossing"],
               ["↩️ Oncoming cars turning right"],
-              ["➡️ A car approaching the intersection from the left (no give-way line on the road)"]
+              ["➡️ A car approaching the intersection from the left"]
             ]
           },
           { "heading": "Decision making" },
