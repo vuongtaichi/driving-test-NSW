@@ -53,7 +53,7 @@ window.GUIDE = [
               ["🚦 At a green light with no arrow, move to the middle of the intersection and wait for a safe gap before turning"]
             ]
           },
-          { "heading": "Parking" },
+          { "heading": "Parking/Turning" },
           {
             "title": "3-point turn",
             "headers": ["#", "Step"],
@@ -132,8 +132,8 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["🖥️ Book and pay online at service.nsw.gov.au, by calling 13 22 13, or at a service centre."],
-              ["⏰ To change or cancel a booking, do it at least 48 hours before the test date — otherwise your fee may not be transferred or refunded."],
-              ["📒 Learner drivers need a passed HPT within the previous 15 months of the test booking, plus at least 120 logged driving hours (20 at night)."]
+              ["⏰ To change or cancel a booking, do it at least <mark class=\"pink\">48 hours</mark> before the test date — otherwise your fee may not be transferred or refunded."],
+              ["📒 Learner drivers need a passed HPT within the previous <mark class=\"pink\">15 months</mark> of the test booking, plus at least 120 logged driving hours (20 at night)."]
             ]
           }
         ]
@@ -159,7 +159,7 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["⚙️ Advanced Driver Assistance Systems (autonomous emergency braking, traction control) must stay switched on for the test — but you must also show you can drive safely without relying on them."],
-              ["⚠️ Warning: if anything you need is missing or can't be fixed in time, the test is terminated — the booking fee isn't refunded and you'll need to pay to rebook."]
+              ["⚠️ Warning: if anything you need is missing or can't be fixed in time, the test is terminated — the booking fee <mark class=\"pink\">isn't refunded</mark> and you'll need to pay to rebook."]
             ]
           }
         ]
@@ -173,10 +173,10 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["👥 Bring a full-licence holder with you — if you fail, you can't drive away on your own."],
-              ["🕐 Arrive at least 15 minutes early, park in the driving test parking area, and report to the counter (hand over your log book if you have one)."],
+              ["🕐 Arrive at least <mark class=\"pink\">15 minutes</mark> early, park in the driving test parking area, and report to the counter (hand over your log book if you have one)."],
               ["✍️ Signing the score sheet starts the test. The testing officer can't coach you or tell you how to drive during the assessment."],
               ["🕵️ An authorised monitoring officer may sit in on your test, to check the testing officer is conducting it properly."],
-              ["📅 If you fail, you can rebook after 7 days. Afterwards the testing officer gives general feedback and a copy of your score sheet."],
+              ["📅 If you fail, you can rebook after <mark class=\"pink\">7 days</mark>. Afterwards the testing officer gives general feedback and a copy of your score sheet."],
               ["⚖️ Bribing people is illegal — offering, requesting or accepting gifts, rewards, money or favours to get a licence carries fines and imprisonment. Report suspected corruption to Transport for NSW (1800 043 642) or ICAC ((02) 8281 5999)."],
               ["🍺 The test is also terminated if there's any suspicion you've consumed alcohol or drugs."]
             ]
@@ -191,10 +191,10 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["🗺️ The Driving Test is a set course over 25 zones, with a testing officer recording your performance on a score sheet."],
+              ["🗺️ The Driving Test is a set course over <mark class=\"pink\">25 zones</mark>, with a testing officer recording your performance on a score sheet."],
               ["🔵 In every diagram in this guide, you are always the blue car, marked A."],
               ["🚨 Breaking road rules or following another vehicle too closely is 'high risk' driving — it fails the test regardless of your overall score."],
-              ["✅ To pass, you need at least 90% with no fail items — see 'Test results' for the full fail-item list."]
+              ["✅ To pass, you need at least <mark class=\"pink\">90% with no fail items</mark> — see 'Test results' for the full fail-item list."]
             ]
           },
           {
@@ -242,7 +242,7 @@ window.GUIDE = [
               ["🔍 When scanning, look into the distance, at the road surface, left and right, in your mirrors, and at your instruments/gauges."],
               ["🚦 Before traffic lights or railway crossings, turn your head to check no one is running the light, no pedestrians are crossing against the signal, and it's safe to go."],
               ["🙈 Checking blind spots is essential — a car, motorcycle or bicycle can easily sit beyond mirror view, and many crashes happen because drivers don't turn their head. Frequently missing this check is a fail."],
-              ["🔁 Turn your head and check blind spots before: changing lanes; leaving/returning to the kerb; merging or diverging; reversing; turning left (pedestrians/cyclists/motorcyclists beside you) or right (overtaking vehicles); joining the traffic stream; leaving the inside lane of a multi-lane roundabout."],
+              ["🔁 Turn your head and <mark class=\"pink\">check blind spots</mark> before: changing lanes; leaving/returning to the kerb; merging or diverging; reversing; turning left (pedestrians/cyclists/motorcyclists beside you) or right (overtaking vehicles); joining the traffic stream; leaving the inside lane of a multi-lane roundabout."],
               ["🔙 All vehicles have a large blind spot behind them — take extra care reversing, since small children can be out of view."]
             ]
           }
@@ -265,21 +265,21 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["💨 Drive at a safe, legal speed for traffic, weather and road conditions."],
-              ["⏱️ Maintain at least a 3-second crash avoidance space to the front — increase it in poor conditions or if you're being followed too closely."],
-              ["🔢 3-second technique: as the vehicle ahead passes a fixed roadside object, count 'one thousand and one, one thousand and two, one thousand and three'. If you reach the object first, you're following too closely — slow down and recount."],
-              ["🌧️ Increase your gap to 4+ seconds in poor conditions: unsealed/icy/wet roads, or at night. Don't cut in front of trucks/buses — it shrinks their crash avoidance space."],
+              ["⏱️ Maintain at least a <mark class=\"pink\">3-second</mark> crash avoidance space to the front — increase it in poor conditions or if you're being followed too closely."],
+              ["🔢 <mark class=\"pink\">3-second</mark> technique: as the vehicle ahead passes a fixed roadside object, count 'one thousand and one, one thousand and two, one thousand and three'. If you reach the object first, you're following too closely — slow down and recount."],
+              ["🌧️ Increase your gap to <mark class=\"pink\">4+ seconds</mark> in poor conditions: unsealed/icy/wet roads, or at night. Don't cut in front of trucks/buses — it shrinks their crash avoidance space."],
               ["🚗 When stopped in traffic, keep one to two car lengths from the vehicle ahead (you may close to within 1m once vehicles stop behind you)."],
               ["🌫️ Slow down if you don't have a clear view ahead (blind corners, blocked intersections, crests, poor weather) — you should be able to see at least 5 seconds ahead."],
-              ["🛣️ 5-second technique in a curve: pick a fixed point that's just come into view and count to five — if you reach it sooner, you're driving too fast for the available vision."],
+              ["🛣️ <mark class=\"pink\">5-second</mark> technique in a curve: pick a fixed point that's just come into view and count to five — if you reach it sooner, you're driving too fast for the available vision."],
               ["🚧 Also slow down when space to the side is limited, and for speed humps/chicanes (no undue jolt or sideways roll)."]
             ]
           }
         ],
         "figures": [
-          { "src": "images-guide/three-seconds-behind.png", "caption": "You must stay at least 3 seconds behind the vehicle ahead." },
+          { "src": "images-guide/three-seconds-behind.png", "caption": "You must stay at least <mark class=\"pink\">3 seconds</mark> behind the vehicle ahead." },
           { "src": "images-guide/increase-distance-poor-conditions.png", "caption": "You must increase this distance in poor conditions (such as rain, fog and dust)." },
           { "src": "images-guide/one-two-car-lengths-stopped.png", "caption": "Leave one to two car lengths in front when stopped." },
-          { "src": "images-guide/five-second-vision.png", "caption": "Slow down if you cannot see 5 seconds ahead." }
+          { "src": "images-guide/five-second-vision.png", "caption": "Slow down if you cannot see <mark class=\"pink\">5 seconds</mark> ahead." }
         ],
         "figuresGrid": { "cols": 2 }
       },
@@ -292,11 +292,11 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["📍 Maintain a safe, legal road position — including at stop signs/lines and during manoeuvres like a 3-point turn or reverse park."],
-              ["🛑 At a 'Stop' sign and line: come to a complete stop before the line, as close to it as possible (within 1m if you first stopped further back, no part of the vehicle over the line). Remain stopped until it's safe to go."],
-              ["↔️ Buffering: keep at least 1m from other vehicles and hazards to the side — slow down if you can't. Move away from oncoming traffic on blind crests/curves (aim for 1m from the centreline)."],
+              ["🛑 At a 'Stop' sign and line: come to a complete stop before the line, as close to it as possible (within <mark class=\"pink\">1m</mark> if you first stopped further back, no part of the vehicle over the line). Remain stopped until it's safe to go."],
+              ["↔️ Buffering: keep at least <mark class=\"pink\">1m</mark> from other vehicles and hazards to the side — slow down if you can't. Move away from oncoming traffic on blind crests/curves (aim for <mark class=\"pink\">1m</mark> from the centreline)."],
               ["🚨 Avoid the high-risk area directly beside other vehicles in multi-laned traffic and other drivers' blind spots."],
-              ["🚫 You will fail if you unnecessarily drive on the wrong side of the road, or cross edge lines/lane markings unnecessarily."],
-              ["➡️ To reduce head-on crash risk on multi-lane roads, only use the right lane when overtaking or turning right."]
+              ["🚫 You will fail if you unnecessarily drive on the <mark class=\"pink\">wrong side</mark> of the road, or <mark class=\"pink\">cross edge</mark> lines/lane markings unnecessarily."],
+              ["➡️ To reduce head-on crash risk on multi-lane roads, <mark class=\"pink\">only use the right lane</mark> when overtaking or turning right."]
             ]
           }
         ],
@@ -315,12 +315,12 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["⬅️ Turning left, unmarked road: approach as far left as practical. Laned road: approach in the left lane or a marked left-turn lane."],
-              ["🔀 Exit a left turn into whichever lane suits the traffic conditions — unless there are multiple turning lanes, in which case you must finish in a permissible lane (exiting the wrong lane is a fail)."],
-              ["➡️ Turning right, unmarked road: keep left of, but as close as practical to, the centre of the road. Laned road: approach in the right lane or a marked right-turn lane. Keep your steering straight while waiting to turn right, so you aren't pushed into oncoming traffic if hit from behind."],
+              ["⬅️ Turning left, unmarked road: approach as <mark class=\"pink\">far left</mark> as practical. Laned road: approach in the <mark class=\"pink\">left lane</mark> or a marked left-turn lane."],
+              ["🔀 Exit a left turn into <mark class=\"pink\">whichever lane</mark> suits the traffic conditions — unless there are multiple turning lanes, in which case you must finish in a permissible lane (exiting the wrong lane is a fail)."],
+              ["➡️ Turning right, unmarked road: keep left of, but as close as practical to, the centre of the road. Laned road: approach in the right lane or a marked right-turn lane. Keep your <mark class=\"pink\">steering straight</mark> while waiting to turn right, so you aren't pushed into oncoming traffic if hit from behind."],
               ["🎯 Steer to the right of the intersection's imaginary centre when turning right, so opposing vehicles can also turn right; keep left of centre as you exit."],
-              ["🛤️ In marked lanes, stay in the same lane from one road to the next. Turning right into a one-way street: approach and exit as close as possible to the right side."],
-              ["🔃 Roundabouts: give way to any vehicle already in the roundabout. Position for multi-lane roundabouts per the road markings and exit in a permissible lane. Signal left when exiting, if practical, and check your blind spot before crossing lanes to exit."]
+              ["🛤️ In marked lanes, stay in the <mark class=\"pink\">same lane</mark> from one road to the next. Turning right into a one-way street: approach and exit as close as possible to the <mark class=\"pink\">right side</mark>."],
+              ["🔃 Roundabouts: <mark class=\"pink\">give way</mark> to any vehicle already in the roundabout. Position for multi-lane roundabouts per the road markings and exit in a permissible lane. <mark class=\"pink\">Signal left</mark> when exiting, if practical, and check your blind spot before crossing lanes to exit."]
             ]
           }
         ],
@@ -344,20 +344,20 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["🅿️ You may be asked to do a kerb-side stop, hill start, 3-point turn, or a parking manoeuvre (reverse parallel, 90°, or 45°, front or rear to kerb — depending on local availability)."],
-              ["📏 Park close to the kerb — closer than 500mm, with wheels not touching it."],
-              ["↔️ Stay at least 1m from other vehicles (no more than 2m when parked)."],
+              ["📏 Park close to the kerb — closer than <mark class=\"pink\">500mm</mark>, with wheels not touching it."],
+              ["↔️ Stay at least <mark class=\"pink\">1m</mark> from other vehicles (no more than <mark class=\"pink\">2m</mark> when parked)."],
               ["🔙 Reversing more than 7m back from the vehicle you're parking behind is a fail."],
               ["📐 Finish as close as practical to the required angle and within any marked lines, using a maximum of 4 direction changes for parking manoeuvres."],
               ["🔄 During a 3-point turn, check left and right before each movement — maximum 5 direction changes (aim for 3 if it's achievable)."],
-              ["🚫 Mounting the kerb at any time during the test is a fail."],
-              ["👁️ During manoeuvres, turn your head and check your blind spot before: moving to the kerb to start; leaving the kerb to rejoin traffic; or steering if the front of the vehicle will swing into the lane while reversing."],
-              ["🪞 While reversing, check the direction of travel — mirrors plus the rear and side windows. Reversing cameras/sensors can help but don't replace these checks, and any park-assist device must be switched off for reversing manoeuvres."]
+              ["🚫 <mark class=\"pink\">Mounting the kerb</mark> at any time during the test is a fail."],
+              ["👁️ During manoeuvres, turn your head and <mark class=\"pink\">check your blind spot</mark> before: moving to the kerb to start; leaving the kerb to rejoin traffic; or steering if the front of the vehicle will swing into the lane while reversing."],
+              ["🪞 While reversing, check the direction of travel — <mark class=\"pink\">mirrors plus the rear and side</mark> windows. Reversing cameras/sensors can help but <mark class=\"pink\">don't replace</mark> these checks, and any park-assist device must be switched off for reversing manoeuvres."]
             ]
           }
         ],
         "figures": [
-          { "src": "images-guide/parallel-closer-than-500mm.png", "caption": "The vehicle should be parallel and closer than 500mm to the kerb. The wheels must not touch the kerb." },
-          { "src": "images-guide/at-least-1m-from-other-vehicles.png", "caption": "You must make sure the vehicle is at least 1m from other vehicles." },
+          { "src": "images-guide/parallel-closer-than-500mm.png", "caption": "The vehicle should be parallel and closer than <mark class=\"pink\">500mm</mark> to the kerb. The wheels must not touch the kerb." },
+          { "src": "images-guide/at-least-1m-from-other-vehicles.png", "caption": "You must make sure the vehicle is at least <mark class=\"pink\">1m</mark> from other vehicles." },
           { "src": "images-guide/park-required-angle-marked-lines.png", "caption": "Park at required angle and within any marked lines." },
           { "src": "images-guide/park-max-4-direction-changes.png", "caption": "Park using a maximum of 4 direction changes." },
           { "src": "images-guide/turn-around-max-5-direction-changes.png", "caption": "Turn around using a maximum of 5 direction changes. If it is possible to complete the manoeuvre in three changes of direction you will be expected to achieve this." },
@@ -375,16 +375,16 @@ window.GUIDE = [
             "rows": [
               ["🤔 A critical decision must be made whenever you enter traffic, change lanes, or cross/turn at an intersection."],
               ["✅ Only go when there's a safe gap, and don't affect other drivers' crash avoidance space — a safe gap means they don't need to change speed or position."],
-              ["⏱️ Turning across traffic: be clear of the intersection at least 3 seconds before approaching vehicles arrive. Joining a stream: pick a gap that lets you reach traffic speed before approaching vehicles are within 3 seconds."],
-              ["🚫 You may fail if you reject safe gaps or unduly stop at intersections when it's clearly safe to proceed."],
+              ["⏱️ Turning across traffic: be clear of the intersection at least <mark class=\"pink\">3 seconds</mark> before approaching vehicles arrive. Joining a stream: pick a gap that lets you reach traffic speed before approaching vehicles are within <mark class=\"pink\">3 seconds</mark>."],
+              ["🚫 You may fail if you <mark class=\"pink\">reject safe gaps</mark> or <mark class=\"pink\">unduly stop at intersections</mark> when it's clearly safe to proceed."],
               ["🚦 Approaching a green light, check your mirrors and be ready to stop — you must stop at yellow unless sudden braking would risk a crash."],
-              ["🌳 At intersections with limited vision (other vehicles, trees, buildings), proceed with caution. After correctly stopping at a stop line, you may move forward to improve vision, provided it's safe and doesn't affect others."]
+              ["🌳 At intersections with limited vision (other vehicles, trees, buildings), proceed with caution. After correctly stopping at a stop line, you may <mark class=\"pink\">move forward</mark> to improve vision, provided it's safe and doesn't affect others."]
             ]
           }
         ],
         "figures": [
-          { "src": "images-guide/choose-safe-gap.png", "caption": "Choose a safe gap so other vehicles are not forced to change speed." },
-          { "src": "images-guide/clear-intersection-3-seconds.png", "caption": "Be clear of the intersection for 3 seconds before other vehicles arrive." }
+          { "src": "images-guide/choose-safe-gap.png", "caption": "Choose a safe gap so other vehicles are <mark class=\"pink\">not forced to change speed</mark>." },
+          { "src": "images-guide/clear-intersection-3-seconds.png", "caption": "Be clear of the intersection for <mark class=\"pink\">3 seconds</mark> before other vehicles arrive." }
         ],
         "figuresGrid": { "cols": 2 }
       },
@@ -397,19 +397,19 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["⚠️ Hazard perception is essential — you're assessed on recognising hazards and responding appropriately."],
-              ["🛑 As you scan, ask whether what you see could enter your crash avoidance space. If something could block your path, respond by: 'setting up'/covering the brakes; easing off the accelerator; reducing speed; or creating a buffer by changing position or lanes."],
-              ["⏳ Respond before reaching a hazard, not at the last moment — e.g. a vehicle waiting to turn in front of you, or waiting to pull out from the left or right."],
+              ["🛑 As you scan, ask whether what you see could enter your crash avoidance space. If something could block your path, respond by: 'setting up'/<mark class=\"pink\">covering the brakes</mark>; easing off the accelerator; reducing speed; or creating a buffer by changing position or lanes."],
+              ["⏳ <mark class=\"pink\">Respond before</mark> reaching a hazard, not at the last moment — e.g. a vehicle waiting to turn in front of you, or waiting to pull out from the left or right."],
               ["🚧 Stopped traffic can obscure your vision at an intersection — treat it as a limited-vision situation."]
             ]
           }
         ],
         "figures": [
           { "src": "images-guide/respond-hazard-can-enter-space.png", "caption": "Respond when something can enter your crash avoidance space." },
-          { "src": "images-guide/respond-before-reaching-hazard.png", "caption": "Respond before reaching the hazard." },
+          { "src": "images-guide/respond-before-reaching-hazard.png", "caption": "Respond before reaching the hazard.", "wide": false },
           { "src": "images-guide/vehicle-waiting-turn-in-front.png", "caption": "A vehicle waiting to turn in front of your path." },
           { "src": "images-guide/vehicle-waiting-pull-out-left.png", "caption": "A vehicle waiting to pull out from the left side." },
           { "src": "images-guide/vehicle-waiting-pull-out-right.png", "caption": "A vehicle waiting to pull out from the right side." },
-          { "src": "images-guide/stopped-traffic-obscuring-vision.png", "caption": "Stopped traffic obscuring vision at an intersection." }
+          { "src": "images-guide/stopped-traffic-obscuring-vision.png", "caption": "Stopped traffic obscuring vision at an intersection.", "wide": false }
         ],
         "figuresGrid": { "cols": 2 }
       }
