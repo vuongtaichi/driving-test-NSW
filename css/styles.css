@@ -625,6 +625,8 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
 }
 .hbtable tr:last-child td { border-bottom: 0; }
 .hbtable mark {
+  display: inline-block;
+  white-space: nowrap;
   background: var(--brand);
   color: var(--brand-ink);
   padding: 1px 6px;
