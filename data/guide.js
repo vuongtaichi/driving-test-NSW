@@ -4,8 +4,19 @@
    Handbook for road rules, and the Driving Test (Class C) Testing Officers Manual for detail. */
 window.GUIDE = [
   {
+    "id": "summary",
+    "title": "Summary",
+    "num": 0,
+    "sections": [
+      {
+        "title": "Summary"
+      }
+    ]
+  },
+  {
     "id": "introduction",
     "title": "Introduction",
+    "num": 1,
     "page": 1,
     "sections": [
       {
@@ -29,6 +40,7 @@ window.GUIDE = [
   {
     "id": "the-driving-test",
     "title": "The Driving Test",
+    "num": 2,
     "page": 3,
     "sections": [
       {
@@ -134,6 +146,7 @@ window.GUIDE = [
   {
     "id": "low-risk-driving",
     "title": "Low risk driving",
+    "num": 3,
     "page": 8,
     "sections": [
       {
@@ -325,6 +338,7 @@ window.GUIDE = [
   {
     "id": "vehicle-control",
     "title": "Vehicle control",
+    "num": 4,
     "page": 29,
     "sections": [
       {
@@ -368,6 +382,7 @@ window.GUIDE = [
   {
     "id": "test-results",
     "title": "Test results",
+    "num": 5,
     "page": 31,
     "sections": [
       {
@@ -460,6 +475,7 @@ window.GUIDE = [
   {
     "id": "tips-for-new-provisional-drivers",
     "title": "Tips for new provisional drivers",
+    "num": 6,
     "page": 41,
     "sections": [
       {

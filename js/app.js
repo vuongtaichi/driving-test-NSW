@@ -355,6 +355,13 @@
     return store.tab === 'guide' ? 'gdSel' : 'hbSel';
   }
 
+  // A chapter's displayed number is its array position by default, but a
+  // chapter can override this via an explicit "num" (e.g. a "0 Summary"
+  // chapter placed before "1 Introduction" without renumbering the rest).
+  function chapNum(chapter, cIdx) {
+    return chapter.num != null ? chapter.num : cIdx + 1;
+  }
+
   function showTab(tab) {
     store.tab = (tab === 'handbook' || tab === 'guide') ? tab : 'dkt';
     save();
@@ -394,7 +401,7 @@
       heading.setAttribute('aria-expanded', 'false');
       var icon = document.createElement('span');
       icon.className = 'hbnav__chapter-icon';
-      icon.textContent = cIdx + 1;
+      icon.textContent = chapNum(chapter, cIdx);
       var label = document.createElement('span');
       label.className = 'hbnav__chapter-label';
       label.textContent = chapter.title;
@@ -415,7 +422,7 @@
         btn.className = 'hbnav__link';
         btn.setAttribute('data-hb-chapter', cIdx);
         btn.setAttribute('data-hb-section', sIdx);
-        btn.textContent = (cIdx + 1) + '.' + (sIdx + 1) + ' ' + section.title;
+        btn.textContent = chapNum(chapter, cIdx) + '.' + (sIdx + 1) + ' ' + section.title;
         li.appendChild(btn);
         list.appendChild(li);
       });
@@ -462,12 +469,12 @@
 
     var eyebrow = document.createElement('p');
     eyebrow.className = 'hbcontent__chapter-label';
-    eyebrow.textContent = (cIdx + 1) + '. ' + chapter.title;
+    eyebrow.textContent = chapNum(chapter, cIdx) + '. ' + chapter.title;
     pane.appendChild(eyebrow);
 
     var title = document.createElement('h2');
     title.className = 'hero__title';
-    title.textContent = (cIdx + 1) + '.' + (sIdx + 1) + ' ' + section.title;
+    title.textContent = chapNum(chapter, cIdx) + '.' + (sIdx + 1) + ' ' + section.title;
     pane.appendChild(title);
 
     var figureList = section.figures || [];
