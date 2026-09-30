@@ -312,7 +312,7 @@
         '<span class="ring ring--split card__ring"><span></span></span>';
       btn.querySelector('strong').textContent = catLabel(cat);
       btn.querySelector('small').innerHTML =
-        '<span class="card__stat card__stat--q">?' + qs.length + '</span>' +
+        '<span class="card__stat card__stat--q">' + qs.length + '</span>' +
         ((prog.right + prog.wrong) ?
           '<span class="card__stat card__stat--right">&#10003;' + prog.right + '</span>' +
           '<span class="card__stat card__stat--wrong">&#10007;' + prog.wrong + '</span>'
@@ -515,7 +515,6 @@
       img.src = fig.src;
       img.alt = fig.caption || section.title;
       img.loading = 'lazy';
-      img.addEventListener('click', function () { openLightbox(fig.src, fig.caption, fig.detail); });
       figure.appendChild(img);
       if (fig.caption) {
         var caption = document.createElement('figcaption');
@@ -949,29 +948,6 @@
     show('quiz');
     renderQuestion();
   }
-
-  /* ---------------- handbook image lightbox ---------------- */
-
-  function openLightbox(src, caption, detail) {
-    $('lightbox-img').src = src;
-    $('lightbox-img').alt = caption || '';
-    $('lightbox-caption').innerHTML = caption ? linkify(caption) : '';
-    $('lightbox-caption').hidden = !caption;
-    $('lightbox-detail').innerHTML = detail ? linkify(detail) : '';
-    $('lightbox-detail').hidden = !detail;
-    $('lightbox').hidden = false;
-  }
-
-  function closeLightbox() {
-    $('lightbox').hidden = true;
-    $('lightbox-img').src = '';
-  }
-
-  $('lightbox-close').addEventListener('click', closeLightbox);
-  $('lightbox-backdrop').addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !$('lightbox').hidden) closeLightbox();
-  });
 
   /* ---------------- events ---------------- */
 
