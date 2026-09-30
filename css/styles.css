@@ -154,7 +154,7 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   line-height: 1.2;
   letter-spacing: -.02em;
 }
-.hero__sub { margin: 0; color: var(--text-dim); text-align: justify; }
+.hero__sub { margin: 0; color: var(--text-dim); }
 
 .stats {
   display: flex;
@@ -461,6 +461,8 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   color: var(--text-dim);
 }
 .hbnav__chapter[aria-expanded="true"] .hbnav__chapter-icon { background: var(--brand); color: var(--brand-ink); }
+.hbnav__chapter--leaf.is-active { background: var(--brand); color: var(--brand-ink); }
+.hbnav__chapter--leaf.is-active .hbnav__chapter-icon { background: var(--brand-ink); color: var(--brand); }
 .hbnav__chapter-label { flex: 1; }
 .hbnav__chapter-chevron { flex: none; font-size: .7rem; transition: transform .15s ease; }
 .hbnav__chapter[aria-expanded="true"] .hbnav__chapter-chevron { transform: rotate(180deg); }
@@ -500,8 +502,6 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   gap: 10px;
   font-size: .95rem;
   line-height: 1.5;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .hbfigure {
@@ -515,7 +515,7 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   text-align: center;
 }
 .hbfigure img { max-width: 100%; border-radius: 6px; }
-.hbfigure figcaption { margin-top: 8px; font-size: .98rem; color: var(--text-dim); text-align: justify; }
+.hbfigure figcaption { margin-top: 8px; font-size: .98rem; color: var(--text-dim); text-align: left; }
 .hbfigure__num {
   position: absolute;
   top: 6px;
@@ -595,7 +595,7 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   color: var(--text);
   background: var(--surface-2);
 }
-.hbtable td { text-align: justify; }
+.hbtable td { text-align: left; }
 .hbtable tr:last-child td { border-bottom: 0; }
 .hbtable mark {
   display: inline-block;
@@ -627,7 +627,6 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   font-size: .8rem;
   line-height: 1.6;
   color: var(--text-dim);
-  text-align: justify;
 }
 .hbabbr strong { color: var(--text); }
 
@@ -834,7 +833,7 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
 .feedback__head { margin: 0 0 6px; font-weight: 700; }
 .feedback__head.is-ok { color: var(--ok); }
 .feedback__head.is-bad { color: var(--bad); }
-.feedback__body { margin: 0; color: var(--text); text-align: justify; }
+.feedback__body { margin: 0; color: var(--text); }
 
 .quiznav { display: flex; gap: 10px; margin-top: 20px; }
 .btn {
@@ -894,7 +893,7 @@ kbd {
 .review__q { margin: 0 0 8px; font-weight: 600; }
 .review__row { margin: 2px 0; font-size: .92rem; color: var(--text-dim); }
 .review__row b { color: var(--text); font-weight: 600; }
-.review__why { margin: 8px 0 0; font-size: .92rem; text-align: justify; }
+.review__why { margin: 8px 0 0; font-size: .92rem; }
 .review__img { max-height: 140px; border-radius: 8px; margin-bottom: 10px; }
 
 /* ---------- footer ---------- */
