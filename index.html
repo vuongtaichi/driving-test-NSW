@@ -141,17 +141,17 @@
   <!-- ================= QUIZ ================= -->
   <section class="view" id="view-quiz" hidden>
     <p class="counter" id="counter">Question 1 of 45</p>
-    <figure class="qimage" id="qimage"><img id="qimg" alt="Diagram for this question" loading="lazy"></figure>
+    <figure class="qimage" id="qimage">
+      <img id="qimg" alt="Diagram for this question" loading="lazy">
+      <button class="qimgnav qimgnav--prev" id="btn-prev" aria-label="Previous question"><span class="qimgnav__tri"></span></button>
+      <button class="qimgnav qimgnav--next" id="btn-next" aria-label="Next question"><span class="qimgnav__tri"></span></button>
+    </figure>
     <h2 class="qtext" id="qtext"></h2>
     <div class="options" id="options" role="group" aria-label="Answer options"></div>
     <div class="feedback" id="feedback" hidden>
       <p class="feedback__head" id="feedback-head"></p>
       <p class="feedback__body" id="feedback-body"></p>
     </div>
-    <nav class="quiznav">
-      <button class="btn btn--ghost" id="btn-prev">Back</button>
-      <button class="btn btn--primary" id="btn-next">Next</button>
-    </nav>
     <p class="hint">Tip: press <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> to answer, <kbd>Enter</kbd> for next.</p>
   </section>
 

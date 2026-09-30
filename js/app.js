@@ -828,7 +828,9 @@
     });
 
     $('btn-prev').disabled = run.idx === 0;
-    $('btn-next').textContent = (run.idx === run.items.length - 1) ? 'Finish' : 'Next';
+    // Icon-only button - "Finish" vs "Next" is conveyed via aria-label instead of
+    // visible text, since setting textContent here would wipe out the arrow icon span.
+    $('btn-next').setAttribute('aria-label', (run.idx === run.items.length - 1) ? 'Finish' : 'Next question');
 
     if (item.picked === null) {
       $('feedback').hidden = true;
@@ -855,6 +857,7 @@
     if (run.instant) {
       var right = item.picked === q.answer;
       $('feedback').hidden = false;
+      $('feedback').className = 'feedback ' + (right ? 'is-ok' : 'is-bad');
       $('feedback-head').textContent = right ? 'Correct' : 'Not quite';
       $('feedback-head').className = 'feedback__head ' + (right ? 'is-ok' : 'is-bad');
       $('feedback-body').textContent = q.explain;
@@ -1022,6 +1025,34 @@
 
   $('btn-next').addEventListener('click', next);
   $('btn-prev').addEventListener('click', prev);
+
+  // Swipe left/right on the Handbook/Guide content pane to move to the next/
+  // previous page, same as tapping hb-next/hb-prev - touch-only (mouse drags
+  // never fire touch events), so this never interferes with desktop use.
+  (function () {
+    var touchStartX = 0, touchStartY = 0, touchActive = false;
+    var SWIPE_MIN_DIST = 60;
+    $('hbcontent').addEventListener('touchstart', function (e) {
+      // Let a wide table's own horizontal scroll (.hbtable-wrap) win instead
+      // of being hijacked into a page change.
+      if ((e.target.closest && e.target.closest('.hbtable-wrap')) || e.touches.length !== 1) {
+        touchActive = false;
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchActive = true;
+    }, { passive: true });
+    $('hbcontent').addEventListener('touchend', function (e) {
+      if (!touchActive) return;
+      touchActive = false;
+      var touch = e.changedTouches[0];
+      var dx = touch.clientX - touchStartX;
+      var dy = touch.clientY - touchStartY;
+      if (Math.abs(dx) < SWIPE_MIN_DIST || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      goToAdjacentHandbookSection(dx < 0 ? 1 : -1);
+    }, { passive: true });
+  })();
 
   // The back arrow returns to wherever this run was launched from: a section's
   // question list if it has one, otherwise straight home.

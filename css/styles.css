@@ -551,10 +551,13 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
 .hbfigures[data-cols="4"] { grid-template-columns: repeat(4, 1fr); }
 .hbfigures[data-cols="5"] { grid-template-columns: repeat(5, 1fr); }
 @media (max-width: 480px) {
-  .hbfigures[data-cols] { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
-  .hbfigures[data-mobile-cols="1"] { grid-template-columns: repeat(1, 1fr); }
-  .hbfigures[data-mobile-cols="2"] { grid-template-columns: repeat(2, 1fr); }
-  .hbfigures[data-mobile-cols="3"] { grid-template-columns: repeat(3, 1fr); }
+  /* Every figures grid becomes a single column on phone width, regardless of
+     its desktop data-cols or a per-section data-mobile-cols override. */
+  .hbfigures,
+  .hbfigures[data-cols],
+  .hbfigures[data-mobile-cols] {
+    grid-template-columns: 1fr;
+  }
 }
 .hbfigures .hbfigure { margin: 0; display: flex; flex-direction: column; --hb-fig-scale: 1; }
 .hbfigures .hbfigure img { max-height: calc(var(--hb-img-h, 220px) * var(--hb-fig-scale, 1)); width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
@@ -793,6 +796,7 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
 /* ---------- quiz ---------- */
 .counter { margin: 0 0 10px; font-size: .85rem; font-weight: 600; color: var(--text-dim); }
 .qimage {
+  position: relative;
   margin: 0 0 16px;
   padding: 10px;
   background: var(--surface);
@@ -806,6 +810,28 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   border-radius: 8px;
   display: inline-block;
 }
+/* Prev/next controls anchored to the image itself rather than the bottom of
+   the page - white circular buttons, not the yellow brand accent. */
+.qimgnav {
+  position: absolute;
+  bottom: 8px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.qimgnav:hover:not(:disabled) { border-color: var(--text-dim); }
+.qimgnav:disabled { opacity: .4; cursor: not-allowed; }
+.qimgnav--prev { left: 8px; }
+.qimgnav--next { right: 8px; }
+.qimgnav__tri { width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+.qimgnav--prev .qimgnav__tri { border-right: 9px solid var(--text); transform: translateX(-1px); }
+.qimgnav--next .qimgnav__tri { border-left: 9px solid var(--text); transform: translateX(1px); }
 .qtext {
   margin: 0 0 16px;
   font-size: 1.22rem;
@@ -849,12 +875,13 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   background: var(--surface-2);
   border-radius: var(--radius);
 }
+.feedback.is-ok { background: color-mix(in srgb, var(--ok-bg) 70%, var(--surface)); }
+.feedback.is-bad { background: color-mix(in srgb, var(--bad-bg) 70%, var(--surface)); }
 .feedback__head { margin: 0 0 6px; font-weight: 700; }
 .feedback__head.is-ok { color: var(--ok); }
 .feedback__head.is-bad { color: var(--bad); }
 .feedback__body { margin: 0; color: var(--text); }
 
-.quiznav { display: flex; gap: 10px; margin-top: 20px; }
 .btn {
   flex: 1;
   padding: 13px 16px;
