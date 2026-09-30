@@ -549,6 +549,7 @@
       img.src = fig.src;
       img.alt = fig.caption || section.title;
       img.loading = 'lazy';
+      img.addEventListener('click', function () { openLightbox(figureList, figIdx); });
       figure.appendChild(img);
       if (fig.caption) {
         var caption = document.createElement('figcaption');
@@ -999,6 +1000,49 @@
     show('quiz');
     renderQuestion();
   }
+
+  /* ---------------- handbook image lightbox (gallery) ---------------- */
+
+  // The lightbox always shows the *whole* figure list of whichever section it
+  // was opened from, so prev/next can browse every image on the page without
+  // closing and reopening - not just the single image that was clicked.
+  var lightboxFigures = [];
+  var lightboxIndex = 0;
+
+  function showLightboxAt(index) {
+    if (index < 0 || index >= lightboxFigures.length) return;
+    lightboxIndex = index;
+    var fig = lightboxFigures[lightboxIndex];
+    $('lightbox-img').src = fig.src;
+    $('lightbox-img').alt = fig.caption || '';
+    $('lightbox-caption').innerHTML = fig.caption ? linkify(fig.caption) : '';
+    $('lightbox-caption').hidden = !fig.caption;
+    $('lightbox-prev').hidden = lightboxIndex === 0;
+    $('lightbox-next').hidden = lightboxIndex === lightboxFigures.length - 1;
+  }
+
+  function openLightbox(figureList, index) {
+    lightboxFigures = figureList;
+    showLightboxAt(index);
+    $('lightbox').hidden = false;
+  }
+
+  function closeLightbox() {
+    $('lightbox').hidden = true;
+    $('lightbox-img').src = '';
+    lightboxFigures = [];
+  }
+
+  $('lightbox-close').addEventListener('click', closeLightbox);
+  $('lightbox-backdrop').addEventListener('click', closeLightbox);
+  $('lightbox-prev').addEventListener('click', function () { showLightboxAt(lightboxIndex - 1); });
+  $('lightbox-next').addEventListener('click', function () { showLightboxAt(lightboxIndex + 1); });
+  document.addEventListener('keydown', function (e) {
+    if ($('lightbox').hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') showLightboxAt(lightboxIndex - 1);
+    else if (e.key === 'ArrowRight') showLightboxAt(lightboxIndex + 1);
+  });
 
   /* ---------------- events ---------------- */
 

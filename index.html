@@ -173,6 +173,17 @@
 
 </main>
 
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Image detail">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image"><span class="lightbox__tri"></span></button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image"><span class="lightbox__tri"></span></button>
+    <img class="lightbox__img" id="lightbox-img" alt="">
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+</div>
+
 <script src="data/questions.js"></script>
 <script src="data/handbook.js"></script>
 <script src="data/guide.js"></script>
