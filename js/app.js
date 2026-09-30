@@ -395,6 +395,26 @@
       var group = document.createElement('div');
       group.className = 'hbnav__group';
 
+      // A chapter with only one section has nothing to expand into - render it
+      // as a flat clickable leaf instead of a toggle + single-item list.
+      if (chapter.sections.length === 1) {
+        var leaf = document.createElement('button');
+        leaf.className = 'hbnav__chapter hbnav__chapter--leaf';
+        leaf.setAttribute('data-hb-chapter', cIdx);
+        leaf.setAttribute('data-hb-section', 0);
+        var leafIcon = document.createElement('span');
+        leafIcon.className = 'hbnav__chapter-icon';
+        leafIcon.textContent = chapNum(chapter, cIdx);
+        var leafLabel = document.createElement('span');
+        leafLabel.className = 'hbnav__chapter-label';
+        leafLabel.textContent = chapter.title;
+        leaf.appendChild(leafIcon);
+        leaf.appendChild(leafLabel);
+        group.appendChild(leaf);
+        nav.appendChild(group);
+        return;
+      }
+
       var heading = document.createElement('button');
       heading.className = 'hbnav__chapter';
       heading.setAttribute('data-hb-toggle', cIdx);
@@ -459,7 +479,7 @@
     save();
 
     expandHandbookChapter(cIdx);
-    Array.prototype.forEach.call(document.querySelectorAll('.hbnav__link'), function (btn) {
+    Array.prototype.forEach.call(document.querySelectorAll('.hbnav__link, .hbnav__chapter--leaf'), function (btn) {
       var active = Number(btn.getAttribute('data-hb-chapter')) === cIdx && Number(btn.getAttribute('data-hb-section')) === sIdx;
       btn.classList.toggle('is-active', active);
     });
@@ -467,14 +487,21 @@
     var pane = $('hbcontent');
     pane.innerHTML = '';
 
-    var eyebrow = document.createElement('p');
-    eyebrow.className = 'hbcontent__chapter-label';
-    eyebrow.textContent = chapNum(chapter, cIdx) + '. ' + chapter.title;
-    pane.appendChild(eyebrow);
+    // A chapter with only one section has nothing to break out into a separate
+    // "X.1 Subtitle" line - just show the chapter itself as a single heading.
+    var hasSubsections = chapter.sections.length > 1;
+    if (hasSubsections) {
+      var eyebrow = document.createElement('p');
+      eyebrow.className = 'hbcontent__chapter-label';
+      eyebrow.textContent = chapNum(chapter, cIdx) + '. ' + chapter.title;
+      pane.appendChild(eyebrow);
+    }
 
     var title = document.createElement('h2');
     title.className = 'hero__title';
-    title.textContent = chapNum(chapter, cIdx) + '.' + (sIdx + 1) + ' ' + section.title;
+    title.textContent = hasSubsections
+      ? chapNum(chapter, cIdx) + '.' + (sIdx + 1) + ' ' + section.title
+      : chapNum(chapter, cIdx) + '. ' + chapter.title;
     pane.appendChild(title);
 
     var figureList = section.figures || [];

@@ -4,12 +4,12 @@
    Handbook for road rules, and the Driving Test (Class C) Testing Officers Manual for detail. */
 window.GUIDE = [
   {
-    "id": "summary",
-    "title": "Summary",
+    "id": "driving-tips",
+    "title": "Driving tips",
     "num": 0,
     "sections": [
       {
-        "title": "Summary"
+        "title": "Driving tips"
       }
     ]
   },
