@@ -26,7 +26,7 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["🚦 Being the 1st car at a red light"],
-              ["🛑 Approaching a stop sign (<mark>3s</mark>) or a give way sign"],
+              ["🛑 Approaching a stop sign <mark>3s</mark> or a give way sign"],
               ["🔀 Entering a T-intersection"]
             ]
           },
@@ -59,11 +59,11 @@ window.GUIDE = [
             "headers": ["#", "Step"],
             "rows": [
               ["1", "↪️ Indicate right for 5 seconds"],
-              ["2", "🔄 Full right lock (1st point) — still in drive"],
+              ["2", "🔄 Full right lock → drive <mark>1st point</mark>"],
               ["3", "⏪ Put in reverse"],
-              ["4", "👀 360° head check (2nd point) — in reverse"],
+              ["4", "👀 360° head check → reverse <mark>2nd point</mark>"],
               ["5", "↪️ Put in drive and indicate right"],
-              ["6", "🔄 Full right lock (3rd point) — in drive"]
+              ["6", "🔄 Full right lock → drive <mark>3rd point</mark>"]
             ]
           },
           {
@@ -73,11 +73,11 @@ window.GUIDE = [
               ["1", "↩️ Indicate left and check your left shoulder"],
               ["2", "⏪ Put in reverse"],
               ["3", "👀 360° head check (right shoulder → ahead → left shoulder → behind)"],
-              ["4", "🔄 Full left lock — in reverse"],
-              ["5", "⬆️ Straighten the steering wheel — in reverse"],
+              ["4", "🔄 Full left lock → reverse"],
+              ["5", "⬆️ Straighten the steering wheel → reverse"],
               ["6", "🔄 Full right lock"],
-              ["7", "👀 360° head check — in reverse"],
-              ["8", "⏩ Put in drive — move forward a bit"],
+              ["7", "👀 360° head check → reverse"],
+              ["8", "⏩ Put in drive → move forward a bit"],
               ["9", "🅿️ Put in park and apply the handbrake"]
             ]
           },
