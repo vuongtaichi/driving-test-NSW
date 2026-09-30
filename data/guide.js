@@ -14,11 +14,11 @@ window.GUIDE = [
           { "heading": "Observation check" },
           {
             "title": "Shoulder check",
-            "headers": ["Point"],
+            "headers": ["When", "Check"],
             "rows": [
-              ["⬅️ Turning left — check the last car"],
-              ["➡️ Turning right — check regardless of road markings (no line, broken line, or double line)"],
-              ["🚘 Pulling out from stationary — shoulder check before moving off"]
+              ["⬅️ Turning left", "The last car"],
+              ["➡️ Turning right", "Regardless of road markings (no line, broken line, or double line)"],
+              ["🚘 Pulling out from stationary", "Shoulder check before moving off"]
             ]
           },
           {
