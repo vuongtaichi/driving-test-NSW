@@ -59,11 +59,11 @@ window.GUIDE = [
             "headers": ["#", "Step"],
             "rows": [
               ["1", "↪️ Indicate right for 5 seconds"],
-              ["2", "🔄 Full right lock (1st point)"],
+              ["2", "🔄 Full right lock (1st point) — still in drive"],
               ["3", "⏪ Put in reverse"],
-              ["4", "👀 360° head check (2nd point)"],
+              ["4", "👀 360° head check (2nd point) — in reverse"],
               ["5", "↪️ Put in drive and indicate right"],
-              ["6", "🔄 Full right lock (3rd point)"]
+              ["6", "🔄 Full right lock (3rd point) — in drive"]
             ]
           },
           {
@@ -73,20 +73,20 @@ window.GUIDE = [
               ["1", "↩️ Indicate left and check your left shoulder"],
               ["2", "⏪ Put in reverse"],
               ["3", "👀 360° head check (right shoulder → ahead → left shoulder → behind)"],
-              ["4", "🔄 Full left lock"],
-              ["5", "⬆️ Straighten the steering wheel"],
+              ["4", "🔄 Full left lock — in reverse"],
+              ["5", "⬆️ Straighten the steering wheel — in reverse"],
               ["6", "🔄 Full right lock"],
-              ["7", "👀 360° head check"],
+              ["7", "👀 360° head check — in reverse"],
               ["8", "⏩ Put in drive — move forward a bit"],
               ["9", "🅿️ Put in park and apply the handbrake"]
             ]
           },
           {
-            "title": "Kerb stop",
+            "title": "Kerb side stop",
             "headers": ["#", "Step"],
             "rows": [
               ["1", "↩️ Indicate left and check your left shoulder"],
-              ["2", "📏 Park within 50cm of the kerb"]
+              ["2", "📏 Park parallel to the kerb, within 50cm of it"]
             ]
           }
         ]

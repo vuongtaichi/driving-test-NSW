@@ -623,8 +623,9 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
    light-gray instead of brand yellow, so only the main parts read as "highlighted". */
 .hbtable-title--sub { background: var(--surface-2); color: var(--text); }
 
-/* A bigger, bolder highlight than .hbtable-title - marks one of a page's few
-   main parts, each of which can group several of its own smaller-titled tables. */
+/* Marks one of a page's few main parts, each of which can group several of
+   its own smaller-titled tables - same text style as the page's own .hero__title
+   (not bigger/bolder), just carrying the brand-yellow highlight treatment. */
 .hbgroup-title {
   display: block;
   margin: 34px 0 14px;
@@ -632,9 +633,9 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   border-radius: var(--radius);
   background: var(--brand);
   color: var(--brand-ink);
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: .01em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
 }
 .hbgroup-title:first-child { margin-top: 0; }
 
