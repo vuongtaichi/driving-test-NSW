@@ -694,18 +694,19 @@
     list.innerHTML = '';
     qs.forEach(function (q) {
       var status = statOf(q.id).last;
-      var li = document.createElement('li');
       var btn = document.createElement('button');
-      btn.className = 'qrow';
+      btn.className = 'qcard';
       btn.setAttribute('data-qid', q.id);
       btn.setAttribute('data-cat', cat);
       btn.innerHTML =
-        '<span class="qrow__num">Q' + q.num + '</span>' +
-        '<span class="qrow__text"></span>' +
-        '<span class="qrow__status qrow__status--' + (status || 'none') + '">' + statusIcon(status) + '</span>';
-      btn.querySelector('.qrow__text').textContent = q.short || q.q;
-      li.appendChild(btn);
-      list.appendChild(li);
+        '<span class="qcard__thumb">' +
+          (q.img ? '<img src="' + q.img + '" alt="" loading="lazy">' : '') +
+          '<span class="qcard__num">Q' + q.num + '</span>' +
+          '<span class="qcard__status qcard__status--' + (status || 'none') + '">' + statusIcon(status) + '</span>' +
+        '</span>' +
+        '<span class="qcard__title"></span>';
+      btn.querySelector('.qcard__title').textContent = q.short || q.q;
+      list.appendChild(btn);
     });
 
     $('topbar-title').textContent = catLabel(cat);

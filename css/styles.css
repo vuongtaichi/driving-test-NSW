@@ -652,21 +652,20 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   }
 }
 
-/* ---------- section (per-topic question list) ---------- */
-.qlist {
+/* ---------- section (per-topic question grid) ---------- */
+.qgrid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);   /* keep the track from growing to fit an unshrinkable row */
-  gap: 8px;
-}
-.qrow {
-  display: flex;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 12px;
-  width: 100%;
-  padding: 11px 14px;
+}
+.qcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
   text-align: left;
   font: inherit;
   color: inherit;
@@ -676,36 +675,62 @@ main.app--wide { max-width: 1100px; --content-max: 1100px; }
   box-shadow: var(--shadow);
   cursor: pointer;
 }
-.qrow:hover { border-color: var(--brand); }
-.qrow__num {
-  flex: none;
-  min-width: 34px;
-  font-weight: 700;
-  font-size: .82rem;
-  color: var(--text-dim);
-}
-.qrow__text {
-  flex: 1;
-  min-width: 0;             /* let a flex item shrink below its content width so ellipsis can kick in */
+.qcard:hover { border-color: var(--brand); }
+.qcard__thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: .92rem;
+  background: var(--surface-2);
+  display: grid;
+  place-items: center;
+  margin-bottom: 8px;
 }
-.qrow__status {
-  flex: none;
-  width: 22px;
-  height: 22px;
+.qcard__thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.qcard__num {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, .58);
+}
+.qcard__status {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: .72rem;
+  font-size: .66rem;
   font-weight: 700;
-  background: var(--surface-2);
+  background: var(--surface);
   color: var(--text-dim);
+  box-shadow: var(--shadow);
 }
-.qrow__status--right { background: var(--ok-bg); color: var(--ok); }
-.qrow__status--wrong { background: var(--bad-bg); color: var(--bad); }
+.qcard__status--right { background: var(--ok-bg); color: var(--ok); }
+.qcard__status--wrong { background: var(--bad-bg); color: var(--bad); }
+.qcard__title {
+  font-size: .82rem;
+  line-height: 1.28;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .qgrid { grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 10px; }
+}
 
 /* ---------- quiz ---------- */
 .counter { margin: 0 0 10px; font-size: .85rem; font-weight: 600; color: var(--text-dim); }
