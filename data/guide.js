@@ -67,7 +67,7 @@ window.GUIDE = [
             ]
           },
           {
-            "title": "Reverse park",
+            "title": "Reverse parallel parking",
             "headers": ["#", "Step"],
             "rows": [
               ["1", "↩️ Indicate left and check your left shoulder"],
