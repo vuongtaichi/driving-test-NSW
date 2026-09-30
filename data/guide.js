@@ -16,10 +16,10 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["The Driving Test is the final step from a learner licence to a provisional P1 licence — pass it and you no longer need a log book or a supervising driver."],
-              ["Learner drivers must pass the computer-based Hazard Perception Test (HPT) before attempting the Driving Test."],
-              ["Other drivers (e.g. recently moved to NSW) may instead need a Driver Knowledge Test or a Fitness to Drive Assessment before booking."],
-              ["For more detail see the Driving Test (Class C) Testing Officers Manual and the Road User Handbook (main road rules) — both at nsw.gov.au. Current Road Rules: legislation.nsw.gov.au."]
+              ["🎓 The Driving Test is the final step from a learner licence to a provisional P1 licence — pass it and you no longer need a log book or a supervising driver."],
+              ["💻 Learner drivers must pass the computer-based Hazard Perception Test (HPT) before attempting the Driving Test."],
+              ["🌏 Other drivers (e.g. recently moved to NSW) may instead need a Driver Knowledge Test or a Fitness to Drive Assessment before booking."],
+              ["📚 For more detail see the Driving Test (Class C) Testing Officers Manual and the Road User Handbook (main road rules) — both at nsw.gov.au. Current Road Rules: legislation.nsw.gov.au."]
             ]
           }
         ]
@@ -39,9 +39,9 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Book and pay online at service.nsw.gov.au, by calling 13 22 13, or at a service centre."],
-              ["To change or cancel a booking, do it at least 48 hours before the test date — otherwise your fee may not be transferred or refunded."],
-              ["Learner drivers need a passed HPT within the previous 15 months of the test booking, plus at least 120 logged driving hours (20 at night)."]
+              ["🖥️ Book and pay online at service.nsw.gov.au, by calling 13 22 13, or at a service centre."],
+              ["⏰ To change or cancel a booking, do it at least 48 hours before the test date — otherwise your fee may not be transferred or refunded."],
+              ["📒 Learner drivers need a passed HPT within the previous 15 months of the test booking, plus at least 120 logged driving hours (20 at night)."]
             ]
           }
         ]
@@ -54,20 +54,20 @@ window.GUIDE = [
             "title": "What to bring",
             "headers": ["Item", "Detail"],
             "rows": [
-              ["Proof of identity", "Learner, overseas or full licence — overseas licences may also need other ID + an English translation"],
-              ["A licence application form", "From nsw.gov.au or a service centre, completed before the test"],
-              ["Glasses or contact lenses", "If needed to drive or for the eyesight test"],
-              ["Payment or concession card", "For the licence fee — some centres only take card, check service.nsw.gov.au if paying cash"],
-              ["Learner Driver Log Book (under 25 only)", "At least 120 logged hours + the signed 'Declaration of Completion'; submit at least 48 hours before the test"],
-              ["A registered, roadworthy vehicle", "Right type for the test class, safe (seatbelts, headrests, working lights/lenses), and in satisfactory condition (legal tyres, no windscreen cracks, no sharp body damage)"]
+              ["🪪 Proof of identity", "Learner, overseas or full licence — overseas licences may also need other ID + an English translation"],
+              ["📝 A licence application form", "From nsw.gov.au or a service centre, completed before the test"],
+              ["👓 Glasses or contact lenses", "If needed to drive or for the eyesight test"],
+              ["💳 Payment or concession card", "For the licence fee — some centres only take card, check service.nsw.gov.au if paying cash"],
+              ["📔 Learner Driver Log Book (under 25 only)", "At least 120 logged hours + the signed 'Declaration of Completion'; submit at least 48 hours before the test"],
+              ["🚗 A registered, roadworthy vehicle", "Right type for the test class, safe (seatbelts, headrests, working lights/lenses), and in satisfactory condition (legal tyres, no windscreen cracks, no sharp body damage)"]
             ]
           },
           {
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Advanced Driver Assistance Systems (autonomous emergency braking, traction control) must stay switched on for the test — but you must also show you can drive safely without relying on them."],
-              ["Warning: if anything you need is missing or can't be fixed in time, the test is terminated — the booking fee isn't refunded and you'll need to pay to rebook."]
+              ["⚙️ Advanced Driver Assistance Systems (autonomous emergency braking, traction control) must stay switched on for the test — but you must also show you can drive safely without relying on them."],
+              ["⚠️ Warning: if anything you need is missing or can't be fixed in time, the test is terminated — the booking fee isn't refunded and you'll need to pay to rebook."]
             ]
           }
         ]
@@ -80,13 +80,13 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Bring a full-licence holder with you — if you fail, you can't drive away on your own."],
-              ["Arrive at least 15 minutes early, park in the driving test parking area, and report to the counter (hand over your log book if you have one)."],
-              ["Signing the score sheet starts the test. The testing officer can't coach you or tell you how to drive during the assessment."],
-              ["An authorised monitoring officer may sit in on your test, to check the testing officer is conducting it properly."],
-              ["If you fail, you can rebook after 7 days. Afterwards the testing officer gives general feedback and a copy of your score sheet."],
-              ["Bribing people is illegal — offering, requesting or accepting gifts, rewards, money or favours to get a licence carries fines and imprisonment. Report suspected corruption to Transport for NSW (1800 043 642) or ICAC ((02) 8281 5999)."],
-              ["The test is also terminated if there's any suspicion you've consumed alcohol or drugs."]
+              ["👥 Bring a full-licence holder with you — if you fail, you can't drive away on your own."],
+              ["🕐 Arrive at least 15 minutes early, park in the driving test parking area, and report to the counter (hand over your log book if you have one)."],
+              ["✍️ Signing the score sheet starts the test. The testing officer can't coach you or tell you how to drive during the assessment."],
+              ["🕵️ An authorised monitoring officer may sit in on your test, to check the testing officer is conducting it properly."],
+              ["📅 If you fail, you can rebook after 7 days. Afterwards the testing officer gives general feedback and a copy of your score sheet."],
+              ["⚖️ Bribing people is illegal — offering, requesting or accepting gifts, rewards, money or favours to get a licence carries fines and imprisonment. Report suspected corruption to Transport for NSW (1800 043 642) or ICAC ((02) 8281 5999)."],
+              ["🍺 The test is also terminated if there's any suspicion you've consumed alcohol or drugs."]
             ]
           }
         ]
@@ -99,32 +99,32 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["The Driving Test is a set course over 25 zones, with a testing officer recording your performance on a score sheet."],
-              ["In every diagram in this guide, you are always the blue car, marked A."],
-              ["Breaking road rules or following another vehicle too closely is 'high risk' driving — it fails the test regardless of your overall score."],
-              ["To pass, you need at least 90% with no fail items — see 'Test results' for the full fail-item list."]
+              ["🗺️ The Driving Test is a set course over 25 zones, with a testing officer recording your performance on a score sheet."],
+              ["🔵 In every diagram in this guide, you are always the blue car, marked A."],
+              ["🚨 Breaking road rules or following another vehicle too closely is 'high risk' driving — it fails the test regardless of your overall score."],
+              ["✅ To pass, you need at least 90% with no fail items — see 'Test results' for the full fail-item list."]
             ]
           },
           {
             "title": "Five key performance indicators",
             "headers": ["Code", "Assessed area"],
             "rows": [
-              ["S", "Speed management"],
-              ["P", "Road positioning"],
-              ["D", "Decision making"],
-              ["H", "Responding to hazards"],
-              ["C", "Vehicle control"]
+              ["S", "💨 Speed management"],
+              ["P", "📍 Road positioning"],
+              ["D", "🧭 Decision making"],
+              ["H", "👀 Responding to hazards"],
+              ["C", "🛞 Vehicle control"]
             ]
           },
           {
             "title": "Score sheet marks",
             "headers": ["Mark", "Meaning"],
             "rows": [
-              ["Tick", "Requirement demonstrated"],
-              ["Circle", "Requirement not demonstrated"],
-              ["Dash in the zone's H column", "No hazard present in that zone"],
-              ["'H' in the notes column", "Observation error"],
-              ["'S' in the notes column", "Signal error"]
+              ["Tick", "✅ Requirement demonstrated"],
+              ["Circle", "⭕ Requirement not demonstrated"],
+              ["Dash in the zone's H column", "➖ No hazard present in that zone"],
+              ["'H' in the notes column", "👁️ Observation error"],
+              ["'S' in the notes column", "↪️ Signal error"]
             ]
           }
         ]
@@ -144,13 +144,13 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["You will fail if your observation is poor — the testing officer assesses it throughout the test."],
-              ["Scanning: keep your eyes moving — look at one area for a couple of seconds, then move on. Turn your head through corners, and check mirrors before slowing or changing direction."],
-              ["When scanning, look into the distance, at the road surface, left and right, in your mirrors, and at your instruments/gauges."],
-              ["Before traffic lights or railway crossings, turn your head to check no one is running the light, no pedestrians are crossing against the signal, and it's safe to go."],
-              ["Checking blind spots is essential — a car, motorcycle or bicycle can easily sit beyond mirror view, and many crashes happen because drivers don't turn their head. Frequently missing this check is a fail."],
-              ["Turn your head and check blind spots before: changing lanes; leaving/returning to the kerb; merging or diverging; reversing; turning left (pedestrians/cyclists/motorcyclists beside you) or right (overtaking vehicles); joining the traffic stream; leaving the inside lane of a multi-lane roundabout."],
-              ["All vehicles have a large blind spot behind them — take extra care reversing, since small children can be out of view."]
+              ["👁️ You will fail if your observation is poor — the testing officer assesses it throughout the test."],
+              ["👀 Scanning: keep your eyes moving — look at one area for a couple of seconds, then move on. Turn your head through corners, and check mirrors before slowing or changing direction."],
+              ["🔍 When scanning, look into the distance, at the road surface, left and right, in your mirrors, and at your instruments/gauges."],
+              ["🚦 Before traffic lights or railway crossings, turn your head to check no one is running the light, no pedestrians are crossing against the signal, and it's safe to go."],
+              ["🙈 Checking blind spots is essential — a car, motorcycle or bicycle can easily sit beyond mirror view, and many crashes happen because drivers don't turn their head. Frequently missing this check is a fail."],
+              ["🔁 Turn your head and check blind spots before: changing lanes; leaving/returning to the kerb; merging or diverging; reversing; turning left (pedestrians/cyclists/motorcyclists beside you) or right (overtaking vehicles); joining the traffic stream; leaving the inside lane of a multi-lane roundabout."],
+              ["🔙 All vehicles have a large blind spot behind them — take extra care reversing, since small children can be out of view."]
             ]
           }
         ],
@@ -171,14 +171,14 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Drive at a safe, legal speed for traffic, weather and road conditions."],
-              ["Maintain at least a 3-second crash avoidance space to the front — increase it in poor conditions or if you're being followed too closely."],
-              ["3-second technique: as the vehicle ahead passes a fixed roadside object, count 'one thousand and one, one thousand and two, one thousand and three'. If you reach the object first, you're following too closely — slow down and recount."],
-              ["Increase your gap to 4+ seconds in poor conditions: unsealed/icy/wet roads, or at night. Don't cut in front of trucks/buses — it shrinks their crash avoidance space."],
-              ["When stopped in traffic, keep one to two car lengths from the vehicle ahead (you may close to within 1m once vehicles stop behind you)."],
-              ["Slow down if you don't have a clear view ahead (blind corners, blocked intersections, crests, poor weather) — you should be able to see at least 5 seconds ahead."],
-              ["5-second technique in a curve: pick a fixed point that's just come into view and count to five — if you reach it sooner, you're driving too fast for the available vision."],
-              ["Also slow down when space to the side is limited, and for speed humps/chicanes (no undue jolt or sideways roll)."]
+              ["💨 Drive at a safe, legal speed for traffic, weather and road conditions."],
+              ["⏱️ Maintain at least a 3-second crash avoidance space to the front — increase it in poor conditions or if you're being followed too closely."],
+              ["🔢 3-second technique: as the vehicle ahead passes a fixed roadside object, count 'one thousand and one, one thousand and two, one thousand and three'. If you reach the object first, you're following too closely — slow down and recount."],
+              ["🌧️ Increase your gap to 4+ seconds in poor conditions: unsealed/icy/wet roads, or at night. Don't cut in front of trucks/buses — it shrinks their crash avoidance space."],
+              ["🚗 When stopped in traffic, keep one to two car lengths from the vehicle ahead (you may close to within 1m once vehicles stop behind you)."],
+              ["🌫️ Slow down if you don't have a clear view ahead (blind corners, blocked intersections, crests, poor weather) — you should be able to see at least 5 seconds ahead."],
+              ["🛣️ 5-second technique in a curve: pick a fixed point that's just come into view and count to five — if you reach it sooner, you're driving too fast for the available vision."],
+              ["🚧 Also slow down when space to the side is limited, and for speed humps/chicanes (no undue jolt or sideways roll)."]
             ]
           }
         ],
@@ -198,12 +198,12 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Maintain a safe, legal road position — including at stop signs/lines and during manoeuvres like a 3-point turn or reverse park."],
-              ["At a 'Stop' sign and line: come to a complete stop before the line, as close to it as possible (within 1m if you first stopped further back, no part of the vehicle over the line). Remain stopped until it's safe to go."],
-              ["Buffering: keep at least 1m from other vehicles and hazards to the side — slow down if you can't. Move away from oncoming traffic on blind crests/curves (aim for 1m from the centreline)."],
-              ["Avoid the high-risk area directly beside other vehicles in multi-laned traffic and other drivers' blind spots."],
-              ["You will fail if you unnecessarily drive on the wrong side of the road, or cross edge lines/lane markings unnecessarily."],
-              ["To reduce head-on crash risk on multi-lane roads, only use the right lane when overtaking or turning right."]
+              ["📍 Maintain a safe, legal road position — including at stop signs/lines and during manoeuvres like a 3-point turn or reverse park."],
+              ["🛑 At a 'Stop' sign and line: come to a complete stop before the line, as close to it as possible (within 1m if you first stopped further back, no part of the vehicle over the line). Remain stopped until it's safe to go."],
+              ["↔️ Buffering: keep at least 1m from other vehicles and hazards to the side — slow down if you can't. Move away from oncoming traffic on blind crests/curves (aim for 1m from the centreline)."],
+              ["🚨 Avoid the high-risk area directly beside other vehicles in multi-laned traffic and other drivers' blind spots."],
+              ["🚫 You will fail if you unnecessarily drive on the wrong side of the road, or cross edge lines/lane markings unnecessarily."],
+              ["➡️ To reduce head-on crash risk on multi-lane roads, only use the right lane when overtaking or turning right."]
             ]
           }
         ],
@@ -222,12 +222,12 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Turning left, unmarked road: approach as far left as practical. Laned road: approach in the left lane or a marked left-turn lane."],
-              ["Exit a left turn into whichever lane suits the traffic conditions — unless there are multiple turning lanes, in which case you must finish in a permissible lane (exiting the wrong lane is a fail)."],
-              ["Turning right, unmarked road: keep left of, but as close as practical to, the centre of the road. Laned road: approach in the right lane or a marked right-turn lane. Keep your steering straight while waiting to turn right, so you aren't pushed into oncoming traffic if hit from behind."],
-              ["Steer to the right of the intersection's imaginary centre when turning right, so opposing vehicles can also turn right; keep left of centre as you exit."],
-              ["In marked lanes, stay in the same lane from one road to the next. Turning right into a one-way street: approach and exit as close as possible to the right side."],
-              ["Roundabouts: give way to any vehicle already in the roundabout. Position for multi-lane roundabouts per the road markings and exit in a permissible lane. Signal left when exiting, if practical, and check your blind spot before crossing lanes to exit."]
+              ["⬅️ Turning left, unmarked road: approach as far left as practical. Laned road: approach in the left lane or a marked left-turn lane."],
+              ["🔀 Exit a left turn into whichever lane suits the traffic conditions — unless there are multiple turning lanes, in which case you must finish in a permissible lane (exiting the wrong lane is a fail)."],
+              ["➡️ Turning right, unmarked road: keep left of, but as close as practical to, the centre of the road. Laned road: approach in the right lane or a marked right-turn lane. Keep your steering straight while waiting to turn right, so you aren't pushed into oncoming traffic if hit from behind."],
+              ["🎯 Steer to the right of the intersection's imaginary centre when turning right, so opposing vehicles can also turn right; keep left of centre as you exit."],
+              ["🛤️ In marked lanes, stay in the same lane from one road to the next. Turning right into a one-way street: approach and exit as close as possible to the right side."],
+              ["🔃 Roundabouts: give way to any vehicle already in the roundabout. Position for multi-lane roundabouts per the road markings and exit in a permissible lane. Signal left when exiting, if practical, and check your blind spot before crossing lanes to exit."]
             ]
           }
         ],
@@ -250,15 +250,15 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["You may be asked to do a kerb-side stop, hill start, 3-point turn, or a parking manoeuvre (reverse parallel, 90°, or 45°, front or rear to kerb — depending on local availability)."],
-              ["Park close to the kerb — closer than 500mm, with wheels not touching it."],
-              ["Stay at least 1m from other vehicles (no more than 2m when parked)."],
-              ["Reversing more than 7m back from the vehicle you're parking behind is a fail."],
-              ["Finish as close as practical to the required angle and within any marked lines, using a maximum of 4 direction changes for parking manoeuvres."],
-              ["During a 3-point turn, check left and right before each movement — maximum 5 direction changes (aim for 3 if it's achievable)."],
-              ["Mounting the kerb at any time during the test is a fail."],
-              ["During manoeuvres, turn your head and check your blind spot before: moving to the kerb to start; leaving the kerb to rejoin traffic; or steering if the front of the vehicle will swing into the lane while reversing."],
-              ["While reversing, check the direction of travel — mirrors plus the rear and side windows. Reversing cameras/sensors can help but don't replace these checks, and any park-assist device must be switched off for reversing manoeuvres."]
+              ["🅿️ You may be asked to do a kerb-side stop, hill start, 3-point turn, or a parking manoeuvre (reverse parallel, 90°, or 45°, front or rear to kerb — depending on local availability)."],
+              ["📏 Park close to the kerb — closer than 500mm, with wheels not touching it."],
+              ["↔️ Stay at least 1m from other vehicles (no more than 2m when parked)."],
+              ["🔙 Reversing more than 7m back from the vehicle you're parking behind is a fail."],
+              ["📐 Finish as close as practical to the required angle and within any marked lines, using a maximum of 4 direction changes for parking manoeuvres."],
+              ["🔄 During a 3-point turn, check left and right before each movement — maximum 5 direction changes (aim for 3 if it's achievable)."],
+              ["🚫 Mounting the kerb at any time during the test is a fail."],
+              ["👁️ During manoeuvres, turn your head and check your blind spot before: moving to the kerb to start; leaving the kerb to rejoin traffic; or steering if the front of the vehicle will swing into the lane while reversing."],
+              ["🪞 While reversing, check the direction of travel — mirrors plus the rear and side windows. Reversing cameras/sensors can help but don't replace these checks, and any park-assist device must be switched off for reversing manoeuvres."]
             ]
           }
         ],
@@ -280,12 +280,12 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["A critical decision must be made whenever you enter traffic, change lanes, or cross/turn at an intersection."],
-              ["Only go when there's a safe gap, and don't affect other drivers' crash avoidance space — a safe gap means they don't need to change speed or position."],
-              ["Turning across traffic: be clear of the intersection at least 3 seconds before approaching vehicles arrive. Joining a stream: pick a gap that lets you reach traffic speed before approaching vehicles are within 3 seconds."],
-              ["You may fail if you reject safe gaps or unduly stop at intersections when it's clearly safe to proceed."],
-              ["Approaching a green light, check your mirrors and be ready to stop — you must stop at yellow unless sudden braking would risk a crash."],
-              ["At intersections with limited vision (other vehicles, trees, buildings), proceed with caution. After correctly stopping at a stop line, you may move forward to improve vision, provided it's safe and doesn't affect others."]
+              ["🤔 A critical decision must be made whenever you enter traffic, change lanes, or cross/turn at an intersection."],
+              ["✅ Only go when there's a safe gap, and don't affect other drivers' crash avoidance space — a safe gap means they don't need to change speed or position."],
+              ["⏱️ Turning across traffic: be clear of the intersection at least 3 seconds before approaching vehicles arrive. Joining a stream: pick a gap that lets you reach traffic speed before approaching vehicles are within 3 seconds."],
+              ["🚫 You may fail if you reject safe gaps or unduly stop at intersections when it's clearly safe to proceed."],
+              ["🚦 Approaching a green light, check your mirrors and be ready to stop — you must stop at yellow unless sudden braking would risk a crash."],
+              ["🌳 At intersections with limited vision (other vehicles, trees, buildings), proceed with caution. After correctly stopping at a stop line, you may move forward to improve vision, provided it's safe and doesn't affect others."]
             ]
           }
         ],
@@ -303,10 +303,10 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Hazard perception is essential — you're assessed on recognising hazards and responding appropriately."],
-              ["As you scan, ask whether what you see could enter your crash avoidance space. If something could block your path, respond by: 'setting up'/covering the brakes; easing off the accelerator; reducing speed; or creating a buffer by changing position or lanes."],
-              ["Respond before reaching a hazard, not at the last moment — e.g. a vehicle waiting to turn in front of you, or waiting to pull out from the left or right."],
-              ["Stopped traffic can obscure your vision at an intersection — treat it as a limited-vision situation."]
+              ["⚠️ Hazard perception is essential — you're assessed on recognising hazards and responding appropriately."],
+              ["🛑 As you scan, ask whether what you see could enter your crash avoidance space. If something could block your path, respond by: 'setting up'/covering the brakes; easing off the accelerator; reducing speed; or creating a buffer by changing position or lanes."],
+              ["⏳ Respond before reaching a hazard, not at the last moment — e.g. a vehicle waiting to turn in front of you, or waiting to pull out from the left or right."],
+              ["🚧 Stopped traffic can obscure your vision at an intersection — treat it as a limited-vision situation."]
             ]
           }
         ],
@@ -335,13 +335,13 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["The testing officer watches your seat posture and steering set-up, smooth use of the accelerator/brakes, clutch-and-gear coordination, appropriate gear selection, and avoiding over-revving on take-off or gear changes."],
-              ["Seatbelt must be correctly fastened, fitted and adjusted (low, flat and firm). Apply a brake when starting the vehicle, and prevent roll-back when starting on hills."],
-              ["Use the park brake correctly — securing the vehicle, and fully released to drive."],
-              ["Steer with both hands on the outside of the wheel (except briefly to use other controls), using 'hand-over-hand' or 'pull-push'."],
-              ["Use other controls (indicators, wipers, demisters) confidently, without being distracted. In a manual car, change gears at a lower engine speed."],
-              ["Signal for at least 5 seconds before leaving the kerb or a parked position."],
-              ["Apply ecodriving techniques from the Road User Handbook to avoid vehicle control errors."]
+              ["🎛️ The testing officer watches your seat posture and steering set-up, smooth use of the accelerator/brakes, clutch-and-gear coordination, appropriate gear selection, and avoiding over-revving on take-off or gear changes."],
+              ["🔒 Seatbelt must be correctly fastened, fitted and adjusted (low, flat and firm). Apply a brake when starting the vehicle, and prevent roll-back when starting on hills."],
+              ["🅿️ Use the park brake correctly — securing the vehicle, and fully released to drive."],
+              ["🛞 Steer with both hands on the outside of the wheel (except briefly to use other controls), using 'hand-over-hand' or 'pull-push'."],
+              ["💡 Use other controls (indicators, wipers, demisters) confidently, without being distracted. In a manual car, change gears at a lower engine speed."],
+              ["↪️ Signal for at least 5 seconds before leaving the kerb or a parked position."],
+              ["🌱 Apply ecodriving techniques from the Road User Handbook to avoid vehicle control errors."]
             ]
           }
         ]
@@ -354,11 +354,11 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Adjust your seat for a clear view of the road and easy reach to the controls; sit back and upright to support your back and shoulders."],
-              ["Adjust the steering wheel low, facing your chest rather than your face — keep your arms bent, thumbs on the rim."],
-              ["Adjust the head restraint for your height (see the owner's manual), and the mirrors for a good view of the rear and sides."],
-              ["Wear your seatbelt 'low, flat and firm' on your hips, with no twists."],
-              ["Keep your knees slightly bent, and brace your body using your left foot."]
+              ["💺 Adjust your seat for a clear view of the road and easy reach to the controls; sit back and upright to support your back and shoulders."],
+              ["🛞 Adjust the steering wheel low, facing your chest rather than your face — keep your arms bent, thumbs on the rim."],
+              ["🪞 Adjust the head restraint for your height (see the owner's manual), and the mirrors for a good view of the rear and sides."],
+              ["🔒 Wear your seatbelt 'low, flat and firm' on your hips, with no twists."],
+              ["🦵 Keep your knees slightly bent, and brace your body using your left foot."]
             ]
           }
         ]
@@ -378,8 +378,8 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["A fail item doesn't stop the test — it continues so you get a full assessment, but you won't pass."],
-              ["Immediate fail: the test stops right away if you do anything unsafe/dangerous with obvious danger to the public, or refuse to cooperate so a proper test isn't possible."]
+              ["▶️ A fail item doesn't stop the test — it continues so you get a full assessment, but you won't pass."],
+              ["🛑 Immediate fail: the test stops right away if you do anything unsafe/dangerous with obvious danger to the public, or refuse to cooperate so a proper test isn't possible."]
             ]
           },
           {
@@ -411,29 +411,29 @@ window.GUIDE = [
             "title": "Test termination (separate from a fail item)",
             "headers": ["Reason"],
             "rows": [
-              ["The test vehicle isn't safe/suitable — e.g. faulty indicators or brake lights, unsatisfactory tyres, unregistered, a cracked windscreen obscuring vision, missing seatbelt/head restraints, sharp body damage, a damaged mirror, or a recording device fitted"],
-              ["The vehicle isn't suitable for the licence class or the applicant's disability, or breaks down during the test"],
-              ["Unacceptable behaviour — a bribe, threats, aggression, or repeated requests to ignore an error"],
-              ["Suspected drug or alcohol influence, a crash during the test, the applicant is too unwell to drive safely, or weather makes the driving task too demanding"],
-              ["Learner Driver Log Book not complete or submitted correctly"],
-              ["Test fee may not be refunded if the test is terminated"]
+              ["🔧 The test vehicle isn't safe/suitable — e.g. faulty indicators or brake lights, unsatisfactory tyres, unregistered, a cracked windscreen obscuring vision, missing seatbelt/head restraints, sharp body damage, a damaged mirror, or a recording device fitted"],
+              ["🚫 The vehicle isn't suitable for the licence class or the applicant's disability, or breaks down during the test"],
+              ["⚖️ Unacceptable behaviour — a bribe, threats, aggression, or repeated requests to ignore an error"],
+              ["🍺 Suspected drug or alcohol influence, a crash during the test, the applicant is too unwell to drive safely, or weather makes the driving task too demanding"],
+              ["📔 Learner Driver Log Book not complete or submitted correctly"],
+              ["💸 Test fee may not be refunded if the test is terminated"]
             ]
           },
           {
             "title": "Score sheet notes codes",
             "headers": ["Code", "Meaning"],
             "rows": [
-              ["K", "Kerb side stop"],
-              ["M", "Manoeuvre"],
-              ["H", "Observation error (fail item 19)"],
-              ["F", "Fail item"],
-              ["T", "Termination"],
-              ["A", "Control error — applicant posture, seat belt"],
-              ["B", "Control error — brake, clutch, gears, accelerator"],
-              ["C", "Control error — course, steering"],
-              ["D", "Control error — dashboard controls, instruments, gauges"],
-              ["E", "Control error — eco driving"],
-              ["S", "Signal error (fail item 12)"]
+              ["K", "🅿️ Kerb side stop"],
+              ["M", "🔄 Manoeuvre"],
+              ["H", "👁️ Observation error (fail item 19)"],
+              ["F", "❌ Fail item"],
+              ["T", "🛑 Termination"],
+              ["A", "💺 Control error — applicant posture, seat belt"],
+              ["B", "🎛️ Control error — brake, clutch, gears, accelerator"],
+              ["C", "🛞 Control error — course, steering"],
+              ["D", "📊 Control error — dashboard controls, instruments, gauges"],
+              ["E", "🌱 Control error — eco driving"],
+              ["S", "↪️ Signal error (fail item 12)"]
             ]
           }
         ]
@@ -446,11 +446,11 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["You wait while the testing officer calculates your result, then they call you to the counter and tell you — plus a test report with your score and notes on improving."],
-              ["If you didn't pass, feedback is general — the testing officer can't discuss specific events, since it isn't a driving lesson. You can book and pay for another test on the spot, or later online."],
-              ["If you believe the test was unfair, contact the manager at your test service centre."],
-              ["If you passed, you'll pay for your P1 licence — congratulations!"],
-              ["Either way, it's best to let your supervising driver take over afterwards — many learners find it hard to concentrate right after the result, elated or disappointed."]
+              ["🧮 You wait while the testing officer calculates your result, then they call you to the counter and tell you — plus a test report with your score and notes on improving."],
+              ["💬 If you didn't pass, feedback is general — the testing officer can't discuss specific events, since it isn't a driving lesson. You can book and pay for another test on the spot, or later online."],
+              ["📞 If you believe the test was unfair, contact the manager at your test service centre."],
+              ["🎉 If you passed, you'll pay for your P1 licence — congratulations!"],
+              ["🧘 Either way, it's best to let your supervising driver take over afterwards — many learners find it hard to concentrate right after the result, elated or disappointed."]
             ]
           }
         ]
@@ -470,27 +470,27 @@ window.GUIDE = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["Newly licensed provisional drivers have a significantly greater crash risk than learners, who benefit from a supervising driver's guidance."],
-              ["Take extra care driving at night, especially Thursday/Friday/Saturday — provisional drivers have a higher crash risk then."],
-              ["In your first 12 months, ask passengers to help spot hazards and support your focus on driving."],
-              ["These restrictions also apply when driving interstate — breaching them risks a fine, demerit points, or losing your licence."]
+              ["🚨 Newly licensed provisional drivers have a significantly greater crash risk than learners, who benefit from a supervising driver's guidance."],
+              ["🌙 Take extra care driving at night, especially Thursday/Friday/Saturday — provisional drivers have a higher crash risk then."],
+              ["👥 In your first 12 months, ask passengers to help spot hazards and support your focus on driving."],
+              ["🚔 These restrictions also apply when driving interstate — breaching them risks a fine, demerit points, or losing your licence."]
             ]
           },
           {
             "title": "P1 (red P) vs P2 (green P) restrictions",
             "headers": ["Restriction", "P1", "P2"],
             "rows": [
-              ["Alcohol limit (BAC)", "Zero", "Zero"],
-              ["Maximum speed", "90km/h (observe all lower limits)", "100km/h (observe all lower limits)"],
-              ["Mobile phone use", "Not at all, even stationary — texting, calls, music, email, social media, internet, maps, photography", "Same as P1"],
-              ["Exceptions", "Show a digital licence to police, or wallet functions for a stationary transaction (park, drive-through)", "Same as P1"],
-              ["Number of passengers", "Limited to fitted seatbelts/child seats; 1 only for 12 months if returning from disqualification; under 25 between 11pm–5am, only 1 passenger under 21 (exemptions apply)", "Same as P1"],
-              ["High-performance cars", "Not allowed — 130kW/tonne+, significantly modified, or on the banned list", "Not allowed (no restriction while still learning to drive one)"],
-              ["Displaying plates", "Red P, clearly on front/back or roof, whole letter visible, secured so it can't fall off", "Green P, same display rules"],
-              ["Being supervised", "Not needed — except driving a manual after passing in an automatic", "Not needed"],
-              ["Supervising a learner", "Not allowed", "Not allowed"],
-              ["Towing a trailer", "Light trailers up to 250kg empty, red P plate on the trailer", "Full licence towing rules apply, green P plate on the trailer"],
-              ["Manual or automatic", "Passed in manual → either; passed in automatic → automatic only, unless supervised in a manual by a full-licence holder", "No restriction — can drive either"]
+              ["🍺 Alcohol limit (BAC)", "Zero", "Zero"],
+              ["💨 Maximum speed", "90km/h (observe all lower limits)", "100km/h (observe all lower limits)"],
+              ["📱 Mobile phone use", "Not at all, even stationary — texting, calls, music, email, social media, internet, maps, photography", "Same as P1"],
+              ["✳️ Exceptions", "Show a digital licence to police, or wallet functions for a stationary transaction (park, drive-through)", "Same as P1"],
+              ["👥 Number of passengers", "Limited to fitted seatbelts/child seats; 1 only for 12 months if returning from disqualification; under 25 between 11pm–5am, only 1 passenger under 21 (exemptions apply)", "Same as P1"],
+              ["🏎️ High-performance cars", "Not allowed — 130kW/tonne+, significantly modified, or on the banned list", "Not allowed (no restriction while still learning to drive one)"],
+              ["🪧 Displaying plates", "Red P, clearly on front/back or roof, whole letter visible, secured so it can't fall off", "Green P, same display rules"],
+              ["🧑‍🏫 Being supervised", "Not needed — except driving a manual after passing in an automatic", "Not needed"],
+              ["🎓 Supervising a learner", "Not allowed", "Not allowed"],
+              ["🚛 Towing a trailer", "Light trailers up to 250kg empty, red P plate on the trailer", "Full licence towing rules apply, green P plate on the trailer"],
+              ["⚙️ Manual or automatic", "Passed in manual → either; passed in automatic → automatic only, unless supervised in a manual by a full-licence holder", "No restriction — can drive either"]
             ]
           }
         ]
