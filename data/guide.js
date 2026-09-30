@@ -16,7 +16,7 @@ window.GUIDE = [
             "title": "Shoulder check",
             "headers": ["When", "Check"],
             "rows": [
-              ["⬅️ Approaching the last parked car", "Left shoulder"],
+              ["⬅️ Turning left — approaching the last parked car", "Left shoulder"],
               ["➡️ Turning right — no line, broken line, or double line", "Right shoulder"],
               ["🚘 Pulling out from stationary", "Shoulder check before moving off"]
             ]
