@@ -36,8 +36,8 @@ window.GUIDE = [
             "headers": ["Point"],
             "rows": [
               ["🚧 Road works"],
-              ["🚶 Pedestrians"],
-              ["🚌 A bus"],
+              ["🚶 Pedestrians on the road"],
+              ["🚌 A bus picking up or dropping off passengers"],
               ["⚡ Zigzag lines before a pedestrian crossing"],
               ["↩️ Oncoming cars turning right"],
               ["➡️ A car approaching the intersection from the left (no give-way line on the road)"]
