@@ -9,7 +9,85 @@ window.GUIDE = [
     "num": 0,
     "sections": [
       {
-        "title": "Driving tips"
+        "title": "Driving tips",
+        "tables": [
+          {
+            "title": "Shoulder check",
+            "headers": ["When", "Check"],
+            "rows": [
+              ["⬅️ Turning left", "The last car"],
+              ["➡️ Turning right", "No line, broken line, or double line"],
+              ["🚘 Pulling out from stationary", "Shoulder check before moving off"]
+            ]
+          },
+          {
+            "title": "Both-directions check",
+            "headers": ["Point"],
+            "rows": [
+              ["🚦 Being the 1st car at a red light"],
+              ["🛑 Approaching a stop sign (3s) or give way sign"],
+              ["🔀 Entering a T-intersection"]
+            ]
+          },
+          {
+            "title": "Hazard response — cover the brake",
+            "headers": ["Point"],
+            "rows": [
+              ["🚧 Road work"],
+              ["🚶 Pedestrians"],
+              ["🚌 A bus"],
+              ["🚗 Other cars — ahead, or in another lane/direction"],
+              ["🦓 On the zigzag line approaching a pedestrian crossing"],
+              ["↩️ Opposite cars turning right"],
+              ["⬅️ A car approaching the intersection from the left (no give-way line on the road)"]
+            ]
+          },
+          {
+            "title": "Decision making",
+            "headers": ["Point"],
+            "rows": [
+              ["⏱️ Ensure a 3-second gap with approaching cars when turning"],
+              ["🔀 When merging into a lane, don't make other vehicles slow down"],
+              ["🐢 Slow down when turning"],
+              ["🚦 At a green light with no arrow: move forward to the middle of the intersection and wait for a safe gap to turn"]
+            ]
+          },
+          {
+            "title": "Parking — 3-point turn",
+            "headers": ["#", "Step"],
+            "rows": [
+              ["1", "↪️ Indicate right for 5 seconds"],
+              ["2", "🔄 Full right lock (1st point)"],
+              ["3", "⏪ Put in reverse"],
+              ["4", "👀 360° head check (2nd point)"],
+              ["5", "↪️ Put in drive + indicate right"],
+              ["6", "🔄 Full right lock (3rd point)"]
+            ]
+          },
+          {
+            "title": "Parking — Reverse park",
+            "headers": ["#", "Step"],
+            "rows": [
+              ["1", "↩️ Indicate left + left shoulder check"],
+              ["2", "⏪ Put in reverse"],
+              ["3", "👀 360° head check (right shoulder → ahead → left shoulder → behind)"],
+              ["4", "🔄 Full left lock"],
+              ["5", "⬆️ Straighten the steering wheel"],
+              ["6", "🔄 Full right lock"],
+              ["7", "👀 360° head check"],
+              ["8", "⏩ Put in drive — move forward a bit"],
+              ["9", "🅿️ Put in park + handbrake on"]
+            ]
+          },
+          {
+            "title": "Parking — Kerb stop",
+            "headers": ["#", "Step"],
+            "rows": [
+              ["1", "↩️ Indicate left + left shoulder check"],
+              ["2", "📏 Park along the kerb with less than 50cm spacing"]
+            ]
+          }
+        ]
       }
     ]
   },
