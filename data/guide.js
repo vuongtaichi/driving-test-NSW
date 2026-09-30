@@ -16,8 +16,8 @@ window.GUIDE = [
             "title": "Shoulder check",
             "headers": ["When", "Check"],
             "rows": [
-              ["⬅️ Turning left", "The last car"],
-              ["➡️ Turning right", "Regardless of road markings (no line, broken line, or double line)"],
+              ["⬅️ Approaching the last car parked on the left, before turning left", "Check your left shoulder"],
+              ["➡️ Turning right — no line, broken line, or double line", "Check your right shoulder"],
               ["🚘 Pulling out from stationary", "Shoulder check before moving off"]
             ]
           },
@@ -27,7 +27,7 @@ window.GUIDE = [
             "rows": [
               ["🚦 Being the 1st car at a red light"],
               ["🛑 Approaching a stop sign <mark>3s</mark> or a give way sign"],
-              ["🔀 Entering a T-intersection"]
+              ["🔀 Entering a T-intersection or a roundabout"]
             ]
           },
           { "heading": "Hazard response" },
