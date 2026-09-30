@@ -1017,6 +1017,15 @@
     $('lightbox-img').alt = fig.caption || '';
     $('lightbox-caption').innerHTML = fig.caption ? linkify(fig.caption) : '';
     $('lightbox-caption').hidden = !fig.caption;
+    // "detail" is the fuller, image-specific Key point description(s) (if any),
+    // shown only in the popup - the grid caption underneath stays short. A
+    // single image can illustrate more than one Key point, so detail may be
+    // either one string or an array of them, each kept as its own line/icon.
+    var detailItems = !fig.detail ? [] : Array.isArray(fig.detail) ? fig.detail : [fig.detail];
+    $('lightbox-detail').innerHTML = detailItems.map(function (d) {
+      return '<p class="lightbox__detail-item">' + linkify(d) + '</p>';
+    }).join('');
+    $('lightbox-detail').hidden = detailItems.length === 0;
     $('lightbox-prev').hidden = lightboxIndex === 0;
     $('lightbox-next').hidden = lightboxIndex === lightboxFigures.length - 1;
   }
