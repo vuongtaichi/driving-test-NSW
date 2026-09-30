@@ -620,10 +620,24 @@
     // A table reads more clearly than bullets for side-by-side comparisons
     // (e.g. licence restrictions by licence type) - a topic can have several.
     var tables = section.tables || (section.table ? [section.table] : []);
+    var inGroup = false;
     tables.forEach(function (t) {
+      // A pseudo-"table" that's just { heading: "..." } groups the tables that
+      // follow it under one bigger highlighted heading, e.g. several manoeuvres
+      // grouped under "Parking" - distinct from a single table's own smaller title.
+      // Every table after it is that group's subsection, so gets the muted
+      // "hbtable-title--sub" look instead of the usual brand-yellow title.
+      if (t.heading) {
+        inGroup = true;
+        var groupTitle = document.createElement('p');
+        groupTitle.className = 'hbgroup-title';
+        groupTitle.textContent = t.heading;
+        pane.appendChild(groupTitle);
+        return;
+      }
       if (t.title) {
         var tableTitle = document.createElement('p');
-        tableTitle.className = 'hbtable-title';
+        tableTitle.className = inGroup ? 'hbtable-title hbtable-title--sub' : 'hbtable-title';
         tableTitle.textContent = t.title;
         pane.appendChild(tableTitle);
       }

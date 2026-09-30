@@ -11,64 +11,66 @@ window.GUIDE = [
       {
         "title": "Driving tips",
         "tables": [
+          { "heading": "Observation check" },
           {
             "title": "Shoulder check",
-            "headers": ["When", "Check"],
+            "headers": ["Point"],
             "rows": [
-              ["⬅️ Turning left", "The last car"],
-              ["➡️ Turning right", "No line, broken line, or double line"],
-              ["🚘 Pulling out from stationary", "Shoulder check before moving off"]
+              ["⬅️ Turning left — check the last car"],
+              ["➡️ Turning right — check regardless of road markings (no line, broken line, or double line)"],
+              ["🚘 Pulling out from stationary — shoulder check before moving off"]
             ]
           },
           {
-            "title": "Both-directions check",
+            "title": "Both directions check",
             "headers": ["Point"],
             "rows": [
               ["🚦 Being the 1st car at a red light"],
-              ["🛑 Approaching a stop sign (3s) or give way sign"],
+              ["🛑 Approaching a stop sign (<mark>3s</mark>) or a give way sign"],
               ["🔀 Entering a T-intersection"]
             ]
           },
+          { "heading": "Hazard response" },
           {
-            "title": "Hazard response — cover the brake",
+            "title": "Cover the brake",
             "headers": ["Point"],
             "rows": [
-              ["🚧 Road work"],
+              ["🚧 Road works"],
               ["🚶 Pedestrians"],
               ["🚌 A bus"],
-              ["🚗 Other cars — ahead, or in another lane/direction"],
-              ["🦓 On the zigzag line approaching a pedestrian crossing"],
-              ["↩️ Opposite cars turning right"],
-              ["⬅️ A car approaching the intersection from the left (no give-way line on the road)"]
+              ["⚡ Zigzag lines before a pedestrian crossing"],
+              ["↩️ Oncoming cars turning right"],
+              ["➡️ A car approaching the intersection from the left (no give-way line on the road)"]
             ]
           },
+          { "heading": "Decision making" },
           {
-            "title": "Decision making",
             "headers": ["Point"],
             "rows": [
               ["⏱️ Ensure a 3-second gap with approaching cars when turning"],
-              ["🔀 When merging into a lane, don't make other vehicles slow down"],
+              ["🔀 When merging into a lane, don't force other vehicles to slow down"],
               ["🐢 Slow down when turning"],
-              ["🚦 At a green light with no arrow: move forward to the middle of the intersection and wait for a safe gap to turn"]
+              ["🚦 At a green light with no arrow, move to the middle of the intersection and wait for a safe gap before turning"]
             ]
           },
+          { "heading": "Parking" },
           {
-            "title": "Parking — 3-point turn",
+            "title": "3-point turn",
             "headers": ["#", "Step"],
             "rows": [
               ["1", "↪️ Indicate right for 5 seconds"],
               ["2", "🔄 Full right lock (1st point)"],
               ["3", "⏪ Put in reverse"],
               ["4", "👀 360° head check (2nd point)"],
-              ["5", "↪️ Put in drive + indicate right"],
+              ["5", "↪️ Put in drive and indicate right"],
               ["6", "🔄 Full right lock (3rd point)"]
             ]
           },
           {
-            "title": "Parking — Reverse park",
+            "title": "Reverse park",
             "headers": ["#", "Step"],
             "rows": [
-              ["1", "↩️ Indicate left + left shoulder check"],
+              ["1", "↩️ Indicate left and check your left shoulder"],
               ["2", "⏪ Put in reverse"],
               ["3", "👀 360° head check (right shoulder → ahead → left shoulder → behind)"],
               ["4", "🔄 Full left lock"],
@@ -76,15 +78,15 @@ window.GUIDE = [
               ["6", "🔄 Full right lock"],
               ["7", "👀 360° head check"],
               ["8", "⏩ Put in drive — move forward a bit"],
-              ["9", "🅿️ Put in park + handbrake on"]
+              ["9", "🅿️ Put in park and apply the handbrake"]
             ]
           },
           {
-            "title": "Parking — Kerb stop",
+            "title": "Kerb stop",
             "headers": ["#", "Step"],
             "rows": [
-              ["1", "↩️ Indicate left + left shoulder check"],
-              ["2", "📏 Park along the kerb with less than 50cm spacing"]
+              ["1", "↩️ Indicate left and check your left shoulder"],
+              ["2", "📏 Park within 50cm of the kerb"]
             ]
           }
         ]
