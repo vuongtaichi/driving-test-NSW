@@ -102,6 +102,24 @@
     return null;
   }
 
+  // Turns a bare NSW Government domain or a known AU phone-number format
+  // appearing in hand-written Handbook/Guide prose into a real link, so
+  // references like "service.nsw.gov.au" or "13 22 13" are clickable/tappable
+  // instead of inert text. Narrow, specific patterns on purpose - a generic
+  // "any digits" phone regex would misfire on distances/times/percentages
+  // that fill the rest of this prose (e.g. "500mm", "3 seconds", "90%").
+  function linkify(html) {
+    html = html.replace(/\b((?:[a-z0-9-]+\.)*nsw\.gov\.au)\b/g, function (m) {
+      return '<a href="https://' + m + '" target="_blank" rel="noopener">' + m + '</a>';
+    });
+    // No \b around the "(0X) ...." alternative: "(" is a non-word character,
+    // so a word boundary never occurs between a preceding space and "(".
+    html = html.replace(/\b13\s?\d{2}\s?\d{2}\b|\b1800\s?\d{3}\s?\d{3}\b|\(0\d\)\s?\d{4}\s?\d{4}/g, function (m) {
+      return '<a href="tel:' + m.replace(/[()\s]/g, '') + '">' + m + '</a>';
+    });
+    return html;
+  }
+
   function categories() {
     var names = [];
     ALL.forEach(function (q) { if (names.indexOf(q.cat) === -1) names.push(q.cat); });
@@ -471,9 +489,15 @@
       pane.appendChild(figuresParent);
     }
     var figureNodes = [];
-    figureList.forEach(function (fig) {
+    figureList.forEach(function (fig, figIdx) {
       var figure = document.createElement('figure');
       figure.className = 'hbfigure';
+      // Numbers restart at 1 on every page - it's a within-page reference
+      // ("see image 2 above"), not a running count across the whole book.
+      var figNum = document.createElement('span');
+      figNum.className = 'hbfigure__num';
+      figNum.textContent = figIdx + 1;
+      figure.appendChild(figNum);
       if (fig.square) figure.classList.add('hbfigure--square');
       if (fig.scale) figure.style.setProperty('--hb-fig-scale', fig.scale);
       if (fig.newRow) figure.style.gridColumnStart = '1';
@@ -495,7 +519,7 @@
       figure.appendChild(img);
       if (fig.caption) {
         var caption = document.createElement('figcaption');
-        caption.textContent = fig.caption;
+        caption.innerHTML = linkify(fig.caption);
         figure.appendChild(caption);
       }
       figuresParent.appendChild(figure);
@@ -554,7 +578,7 @@
       ul.className = 'hbcontent__bullets';
       section.bullets.forEach(function (bullet) {
         var li = document.createElement('li');
-        li.textContent = bullet;
+        li.innerHTML = linkify(bullet);
         ul.appendChild(li);
       });
       pane.appendChild(ul);
@@ -591,7 +615,7 @@
         var tr = document.createElement('tr');
         row.forEach(function (cell) {
           var td = document.createElement('td');
-          td.innerHTML = cell;   // table data is hand-authored, not user input - allows an occasional <mark> for emphasis
+          td.innerHTML = linkify(cell);   // table data is hand-authored, not user input - allows an occasional <mark> for emphasis
           tr.appendChild(td);
         });
         tbody.appendChild(tr);
@@ -608,7 +632,7 @@
       var abbrNote = document.createElement('p');
       abbrNote.className = 'hbabbr';
       abbrNote.innerHTML = section.abbr.map(function (pair) {
-        return '<strong>' + pair[0] + '</strong> = ' + pair[1];
+        return '<strong>' + pair[0] + '</strong> = ' + linkify(pair[1]);
       }).join(' &nbsp;·&nbsp; ');
       pane.appendChild(abbrNote);
     }
@@ -931,9 +955,9 @@
   function openLightbox(src, caption, detail) {
     $('lightbox-img').src = src;
     $('lightbox-img').alt = caption || '';
-    $('lightbox-caption').textContent = caption || '';
+    $('lightbox-caption').innerHTML = caption ? linkify(caption) : '';
     $('lightbox-caption').hidden = !caption;
-    $('lightbox-detail').textContent = detail || '';
+    $('lightbox-detail').innerHTML = detail ? linkify(detail) : '';
     $('lightbox-detail').hidden = !detail;
     $('lightbox').hidden = false;
   }
