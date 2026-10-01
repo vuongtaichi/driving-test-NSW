@@ -438,8 +438,8 @@ window.HANDBOOK = [
         "figures": [
           { "src": "images-handbook/child-seat-rear-facing.jpg", "caption": "Up to 6 months — approved rear-facing child car seat." },
           { "src": "images-handbook/child-seat-rear-or-forward.jpg", "caption": "6 months to 4 years — approved rear- or forward-facing child car seat." },
-          { "src": "images-handbook/child-seat-booster.jpg", "caption": "4+ years — approved booster seat." },
-          { "src": "images-handbook/child-seat-adult-belt.jpg", "caption": "145cm or taller — can use an adult seatbelt." }
+          { "src": "images-handbook/child-seat-booster.jpg", "caption": "4+ years — approved booster seat.", "detail": "7–16yo too small for an adult belt: booster, forward-facing seat, or anchored harness." },
+          { "src": "images-handbook/child-seat-adult-belt.jpg", "caption": "145cm or taller — can use an adult seatbelt.", "detail": "An adult belt needs the child to be about 145cm tall." }
         ],
         "bullets": [],
         "tables": [
@@ -448,7 +448,6 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Under-7yo need an approved restraint (AS/NZS 1754) — driver's responsibility. See the age table below"],
-              ["7–16yo too small for an adult belt: booster, forward-facing seat, or anchored harness (adult belt needs ~145cm)"],
               ["Fit tightly per the manufacturer's instructions, proper anchorage — an Authorised Restraint Fitter is recommended"],
               ["Front seat: under-4yo never in a 2+ row vehicle; 4–7yo only if every back-row seat is taken by other under-7yo"],
               ["Penalties: fines and demerits (can double) for not restraining a child correctly"],
@@ -595,7 +594,7 @@ window.HANDBOOK = [
         "title": "Safe stopping distance",
         "page": 64,
         "figures": [
-          { "src": "images-handbook/crash-avoidance-3sec.jpg", "caption": "Keep at least 3 seconds' distance between your vehicle and the vehicle in front." },
+          { "src": "images-handbook/crash-avoidance-3sec.jpg", "caption": "Keep at least 3 seconds' distance between your vehicle and the vehicle in front.", "detail": "Penalty: fine and demerit points for following too closely." },
           { "src": "images-handbook/crash-avoidance-photo.jpg", "caption": "Keep a 3-second gap behind the vehicle in front of you.", "detail": ["Keep a 3-second gap behind the vehicle in front (4+ seconds in poor conditions: unsealed, icy/wet, night).", "Check your gap: count \"1 thousand and 1, 2 thousand and 2...\" from a fixed object as the vehicle ahead passes it — too close if you reach it first."] },
           { "src": "images-handbook/stopping-distance-chart.jpg", "caption": "The distance a car travels to stop at 40/60/80/100km/h, on a dry vs wet road." }
         ],
@@ -609,8 +608,7 @@ window.HANDBOOK = [
               ["Long vehicle (7.5m+ incl. towed): stay 60m+ behind another long vehicle, except multi-lane roads, built-up areas, or overtaking"],
               ["Buffering: keep space around your vehicle for hazards (keep left over blind hills, avoid the door zone of parked cars)"],
               ["Two-stage braking (light pressure + pause, then squeeze) beats harsh braking, especially wet/gravel"],
-              ["Scanning: keep your eyes moving — ahead, road surface, each side, mirrors and instruments"],
-              ["Penalty: fine and demerit points for following too closely"]
+              ["Scanning: keep your eyes moving — ahead, road surface, each side, mirrors and instruments"]
             ]
           },
           {
@@ -910,7 +908,7 @@ window.HANDBOOK = [
           { "src": "images-handbook/bicycle-signal-red.jpg", "caption": "Red bicycle crossing light." },
           { "src": "images-handbook/bicycle-storage-area.jpg", "caption": "A bicycle storage area at traffic lights — vehicles must not enter it while the lights are red.", "wide": true, "scale": 2 },
           { "src": "images-handbook/pedestrian-signal-red.jpg", "caption": "Red pedestrian symbol — pedestrians must not start to cross.", "scale": 2 },
-          { "src": "images-handbook/pedestrian-signal-flashing-red.jpg", "caption": "Flashing red pedestrian symbol — must not start to cross, but can finish crossing.", "scale": 2 },
+          { "src": "images-handbook/pedestrian-signal-flashing-red.jpg", "caption": "Flashing red pedestrian symbol — must not start to cross, but can finish crossing.", "scale": 2, "detail": "When turning, give way to any pedestrian still crossing even on a flashing red." },
           { "src": "images-handbook/pedestrian-signal-green.jpg", "caption": "Green pedestrian symbol — pedestrians can start to cross.", "scale": 2 },
           { "src": "images-handbook/pedestrian-walk-direction.jpg", "caption": "Pedestrians can walk in any direction when the green pedestrian symbol is showing.", "scale": 2 },
           { "src": "images-handbook/pedestrian-countdown.jpg", "caption": "Pedestrian countdown timers show the number of seconds until the lights change.", "scale": 2 }
@@ -923,7 +921,7 @@ window.HANDBOOK = [
             "rows": [
               ["Must always obey traffic lights, even with no other traffic around or late at night — the same rules apply to temporary lights at roadworks"],
               ["No U-turns at traffic lights unless a \"U-turn permitted\" sign is shown"],
-              ["When turning, give way to any pedestrian still crossing even on a flashing red, and always stop for pedestrians at a pelican crossing"],
+              ["Always stop for pedestrians at a pelican crossing"],
               ["Red-light speed cameras catch both red-light running and speeding at any light phase"]
             ]
           },
@@ -975,7 +973,7 @@ window.HANDBOOK = [
         "page": 91,
         "figures": [
           { "src": "images-handbook/roundabout-ahead-sign.jpg", "caption": "\"Roundabout ahead\" sign.", "scale": 1.5 },
-          { "src": "images-handbook/roundabout-giveway-sign.jpg", "caption": "\"Give way to vehicles on the roundabout\" sign.", "scale": 1.5 },
+          { "src": "images-handbook/roundabout-giveway-sign.jpg", "caption": "\"Give way to vehicles on the roundabout\" sign.", "scale": 1.5, "detail": "On approach, slow or stop to give way to all vehicles already on the roundabout — those on your right, and those who've entered from your left or from directly opposite you." },
           { "src": "images-handbook/roundabout-turn-left.jpg", "caption": "Turning left at a roundabout.", "scale": 1.5 },
           { "src": "images-handbook/roundabout-straight.jpg", "caption": "Going straight ahead at a roundabout.", "scale": 1.5 },
           { "src": "images-handbook/roundabout-turn-right.jpg", "caption": "Turning right or making a full turn (U-turn) at a roundabout.", "scale": 1.5 },
@@ -990,7 +988,6 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Traffic moves one way around a central island; you can turn left or right, go straight ahead, or make a full U-turn"],
-              ["On approach, slow or stop to give way to all vehicles already on the roundabout — those on your right, and those who've entered from your left or from directly opposite you"],
               ["Pedestrians: you don't have to give way when turning unless there's a marked crossing, but must always avoid a collision"]
             ]
           },
@@ -1051,7 +1048,7 @@ window.HANDBOOK = [
         "title": "Turning left and right",
         "page": 106,
         "figures": [
-          { "src": "images-handbook/turn-plan-ahead.jpg", "caption": "Turning right then immediately left: turn right from the left lane." },
+          { "src": "images-handbook/turn-plan-ahead.jpg", "caption": "Turning right then immediately left: turn right from the left lane.", "detail": "Plan turns early to be in the right lane in time to indicate." },
           { "src": "images-handbook/turning-right-dividing-lines.jpg", "caption": "You can cross a single or double dividing line when entering or leaving a road.", "detail": "May cross any dividing line to enter or leave a road, driveway or car park." },
           { "src": "images-handbook/hook-turn-diagram.jpg", "caption": "A bicycle hook turn: wait at the far left (A), keep left while turning (B), turn when it's safe (C).", "newRow": true, "wide": true, "detail": "Bicycles may hook-turn right (from the far left, staying left through the intersection, giving way to traffic from their right) — needs no hand signal (an ordinary right turn does)." },
           { "src": "images-handbook/long-vehicle-turning.jpg", "caption": "Stay behind heavy vehicles that are turning — don't put your vehicle in their path.", "wide": true, "detail": "Long/oversize vehicles with a \"Do not overtake turning vehicle\" sign may use more than one lane to turn — stay behind, never alongside, until complete." },
@@ -1075,7 +1072,7 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Always check both directions before turning and give way to pedestrians crossing the road you're turning into"],
-              ["Plan turns early to be in the right lane in time to indicate; may drive on/across/outside edge lines for up to 100m when turning"],
+              ["May drive on/across/outside edge lines for up to 100m when turning"],
               ["Turning left: indicate left, move close to the left side, keep left in the road you're entering, use a slip lane if there is one"],
               ["Turning right: indicate right, follow lane markings/arrows, move close to the centre dividing line, stay in the same relative lane crossing; keep wheels straight beforehand so you don't block oncoming traffic"]
             ]
@@ -1165,7 +1162,7 @@ window.HANDBOOK = [
           { "src": "images-handbook/pedestrian-crossing-sign.jpg", "caption": "'Pedestrian crossing' sign, shown at the crossing." },
           { "src": "images-handbook/pedestrian-crossing-ahead-sign.jpg", "caption": "'Pedestrian crossing ahead' warning sign." },
           { "src": "images-handbook/children-crossing-ahead-sign.jpg", "caption": "'Children may be crossing ahead' warning sign." },
-          { "src": "images-handbook/pedestrians-crossing-ahead-sign.jpg", "caption": "'Pedestrians may be crossing ahead' warning sign, used near pedestrian refuges and high-activity areas." },
+          { "src": "images-handbook/pedestrians-crossing-ahead-sign.jpg", "caption": "'Pedestrians may be crossing ahead' warning sign, used near pedestrian refuges and high-activity areas.", "detail": "High pedestrian activity areas (shopping strips, near schools/parks/pools) may have a lower limit and warning signs — slow down when you see them." },
           { "src": "images-handbook/zigzag-crossing.jpg", "caption": "A pedestrian crossing with zig-zag approach lines.", "wide": true },
           { "src": "images-handbook/childrens-crossing-flag.jpg", "caption": "A red-orange flag marks a children's crossing when it's operating." }
         ],
@@ -1177,8 +1174,7 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Must give way to pedestrians crossing at any pedestrian crossing; approach at a speed that lets you stop, and give extra time to children or elderly pedestrians."],
-              ["Still stop at a nearby Stop sign even if you've just stopped for a crossing."],
-              ["High pedestrian activity areas (shopping strips, near schools/parks/pools) may have a lower limit and warning signs — slow down when you see them."]
+              ["Still stop at a nearby Stop sign even if you've just stopped for a crossing."]
             ]
           },
           {
@@ -1199,9 +1195,9 @@ window.HANDBOOK = [
         "page": 120,
         "figures": [
           { "src": "images-handbook/level-crossing-sign.jpg", "caption": "Level crossing sign, placed at the crossing itself.", "wide": false },
-          { "src": "images-handbook/level-crossing-giveway.jpg", "caption": "'Give way' at a level crossing: slow down, look both ways, and stop if a train is coming." },
+          { "src": "images-handbook/level-crossing-giveway.jpg", "caption": "'Give way' at a level crossing: slow down, look both ways, and stop if a train is coming.", "detail": "If you stopped at a Stop/Give way sign, still wait until it's genuinely safe to proceed." },
           { "src": "images-handbook/level-crossing-warning-signs.jpg", "caption": "Level crossing warning signs: flashing lights ahead, level crossing ahead, and level crossing on a side road.", "newRow": true, "wide": true },
-          { "src": "images-handbook/level-crossing-stop-signals.jpg", "caption": "Stop at a level crossing for a Stop sign, flashing red lights, or a closing/closed boom gate.", "newRow": true, "wide": true }
+          { "src": "images-handbook/level-crossing-stop-signals.jpg", "caption": "Stop at a level crossing for a Stop sign, flashing red lights, or a closing/closed boom gate.", "newRow": true, "wide": true, "detail": "Don't proceed until lights stop flashing and gates are fully open." }
         ],
         "figuresGrid": { "cols": 2 },
         "bullets": [],
@@ -1212,7 +1208,6 @@ window.HANDBOOK = [
             "rows": [
               ["Trains are fast, heavy and can't stop quickly — always slow down, look and listen approaching a crossing; never drive onto one while a train is approaching or if the far side is blocked."],
               ["Never block a crossing — only cross if you can clear the tracks completely; never stop/park on a crossing or within 20m of either side."],
-              ["Don't proceed until lights stop flashing and gates are fully open — and if you stopped at a Stop/Give way sign, still wait until it's genuinely safe."],
               ["Crossings without signals (common in the country) need extra care: slow down, look and listen both ways, and after one train passes, check for a second before crossing."]
             ]
           },
