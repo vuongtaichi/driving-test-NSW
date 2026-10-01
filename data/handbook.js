@@ -1283,7 +1283,7 @@ window.HANDBOOK = [
           { "src": "images-handbook/oversize-vehicle-sign.jpg", "caption": "'Oversize' sign: the vehicle is wider, longer or higher than normal.", "wide": false },
           { "src": "images-handbook/do-not-overtake-turning-vehicle-sign.jpg", "caption": "'Do not overtake turning vehicle' sign, used on long vehicles that may need more than one lane to turn.", "wide": true, "detail": "A \"Do not overtake turning vehicle\" sign: don't overtake on the left while it's turning left; don't overtake on the right while it's turning right unless clearly safe." },
           { "src": "images-handbook/long-vehicle-no-overtake-left.jpg", "caption": "Do not overtake to the left of a long vehicle which is turning left.", "span": 4 },
-          { "src": "images-handbook/long-vehicle-overtake-left-multilane.jpg", "caption": "You can overtake a long vehicle on the left when it's safe and you're on a multi-lane road." },
+          { "src": "images-handbook/long-vehicle-overtake-left-multilane.jpg", "caption": "You can overtake a long vehicle on the left when it's safe and you're on a multi-lane road.", "detail": "Overtaking on the left is only allowed when the vehicle ahead is waiting to turn right/U-turn from the centre, is stopped, or you're on a multi-lane road." },
           { "src": "images-handbook/overtake-motorcycle.jpg", "caption": "Give motorcycles plenty of room when overtaking." },
           { "src": "images-handbook/overtake-bicycle.jpg", "caption": "You can cross double dividing lines when overtaking a bicycle.", "wide": true },
           { "src": "images-handbook/no-overtaking-passing-sign.jpg", "caption": "'No overtaking or passing' sign, used on bridges.", "detail": "A \"No overtaking or passing\" sign on a bridge: give way to oncoming traffic, don't overtake vehicles travelling the same direction." }
@@ -1297,8 +1297,7 @@ window.HANDBOOK = [
               ["Take care and accurately judge the space needed — if in doubt, wait. Check mirrors and blind spots first; motorcycles/bicycles can be hidden behind other vehicles."],
               ["Before overtaking: check the road ahead is clear with enough distance, check side streets/other lanes, check mirrors/blind spots, and indicate."],
               ["While overtaking, stay under the speed limit; before returning, make sure you can see the passed vehicle in your mirror, and indicate."],
-              ["Being overtaken: don't speed up — stay in your lane, keep left, give them room to pass and return."],
-              ["Overtaking on the left is only allowed when the vehicle ahead is waiting to turn right/U-turn from the centre, is stopped, or you're on a multi-lane road."]
+              ["Being overtaken: don't speed up — stay in your lane, keep left, give them room to pass and return."]
             ]
           },
           {
@@ -1356,7 +1355,7 @@ window.HANDBOOK = [
         "title": "Motorways and freeways",
         "page": 134,
         "figures": [
-          { "src": "images-handbook/start-motorway-signs.jpg", "caption": "These signs show the start of a motorway." },
+          { "src": "images-handbook/start-motorway-signs.jpg", "caption": "These signs show the start of a motorway.", "detail": "A motorway/freeway/expressway is a high-speed road with more than one lane each direction; bicycles may use it unless signed otherwise." },
           { "src": "images-handbook/ramp-metering-sign.jpg", "caption": "Sign at ramp metering signals on a motorway.", "detail": "Ramp metering signals manage motorway entry — green stays on just long enough for one vehicle per lane." },
           { "src": "images-handbook/ramp-metering-photo.jpg", "caption": "You must stop at a red ramp metering signal on a motorway.", "detail": "Stop behind the line on red." },
           { "src": "images-handbook/variable-speed-limit-signs.jpg", "caption": "Overhead variable speed limit signs — you must not drive over the speed limit shown." },
@@ -1366,8 +1365,8 @@ window.HANDBOOK = [
           { "src": "images-handbook/motorway-lane-signals-photo.jpg", "caption": "Left lane-merge and closed-lane signals in use — you must not drive in the right lane, and must change lanes left if you're in the second lane from the right." },
           { "src": "images-handbook/variable-message-sign.jpg", "caption": "Variable message sign showing travel times.", "wide": true, "detail": "Variable message signs show travel times and conditions such as ramp closures." },
           { "src": "images-handbook/end-motorway-signs.jpg", "caption": "These signs indicate the end of a motorway." },
-          { "src": "images-handbook/exit-motorway-sign.jpg", "caption": "Exit sign from a motorway." },
-          { "src": "images-handbook/motorway-exit-ahead-sign.jpg", "caption": "An exit to the motorway is coming." },
+          { "src": "images-handbook/exit-motorway-sign.jpg", "caption": "Exit sign from a motorway.", "detail": "Indicate before exiting; if you miss your exit, continue to the next one." },
+          { "src": "images-handbook/motorway-exit-ahead-sign.jpg", "caption": "An exit to the motorway is coming.", "detail": "Move to the exit lane early when you see this sign." },
           { "src": "images-handbook/toll-road-sign.jpg", "caption": "Toll road sign — you can pay the toll by electronic tag or electronic pass.", "detail": "Toll roads are signed — pay via an electronic tag or pass, or you'll be sent a toll notice." }
         ],
         "bullets": [],
@@ -1376,11 +1375,10 @@ window.HANDBOOK = [
             "title": "Key points",
             "headers": ["Point"],
             "rows": [
-              ["A motorway/freeway/expressway is a high-speed road with more than one lane each direction; bicycles may use it unless signed otherwise. Check fuel/oil/water/tyres before a long trip."],
+              ["Check fuel/oil/water/tyres before a long trip."],
               ["Joining: your lane typically ends and you cross a broken line — give way to traffic already there, slow down, find a safe gap."],
               ["On a motorway with a limit over 80km/h and 2+ lanes, don't drive in the right lane unless overtaking, avoiding an obstruction, all lanes are congested, or a sign allows it. Never U-turn or reverse."],
-              ["Must not stop or park except in a genuine emergency — move to the emergency stopping lane if you must stop."],
-              ["Leaving: move to the exit lane early, indicate before exiting; if you miss your exit, continue to the next one."]
+              ["Must not stop or park except in a genuine emergency — move to the emergency stopping lane if you must stop."]
             ]
           },
           {
@@ -1427,7 +1425,7 @@ window.HANDBOOK = [
           { "src": "images-handbook/painted-island-double-lines.jpg", "caption": "You must not drive or stop on a painted island that's surrounded by double lines." },
           { "src": "images-handbook/painted-island-turning-lane.jpg", "caption": "A car entering a turning lane from a painted island (Car B) must give way to the car already in the turning lane (Car A)." },
           { "src": "images-handbook/s-lane.jpg", "caption": "You must not cross a continuous line to turn into an S-lane.", "wide": true, "rowSpan": 2 },
-          { "src": "images-handbook/painted-arrows-intersection.jpg", "caption": "Follow the painted arrows and stay in your lane when turning." },
+          { "src": "images-handbook/painted-arrows-intersection.jpg", "caption": "Follow the painted arrows and stay in your lane when turning.", "detail": "Painted arrows show a lane's permitted direction(s) — go any way shown, but still indicate and stay in your lane through marked turn lines." },
           { "src": "images-handbook/keep-clear-marking.jpg", "caption": "Area with 'Keep clear' marked on the road.", "wide": true },
           { "src": "images-handbook/dragons-teeth-photo.jpg", "caption": "Dragon's teeth road markings in a school zone." }
         ],
@@ -1438,8 +1436,7 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Keep to the middle of your lane; keep left where there are no lane markings or approaching the top of a hill; watch for lanes dedicated to bicycles, buses, trams and trucks."],
-              ["White dividing lines separate opposite-direction traffic — always drive to their left. May cross one to avoid an obstruction if you have a clear view, it's necessary/reasonable, and safe."],
-              ["Painted arrows show a lane's permitted direction(s) — go any way shown, but still indicate and stay in your lane through marked turn lines."]
+              ["White dividing lines separate opposite-direction traffic — always drive to their left. May cross one to avoid an obstruction if you have a clear view, it's necessary/reasonable, and safe."]
             ]
           },
           {
@@ -1504,19 +1501,11 @@ window.HANDBOOK = [
         "title": "Median turning lanes",
         "page": 149,
         "figures": [
-          { "src": "images-handbook/median-turning-lane-sign.jpg", "caption": "'Median turning lane' sign." },
+          { "src": "images-handbook/median-turning-lane-sign.jpg", "caption": "'Median turning lane' sign.", "detail": "A shared centre lane for vehicles from either direction turning right into a side road, driveway or property access — marked by signs or arrows." },
           { "src": "images-handbook/median-turning-lane-diagram.jpg", "caption": "You can enter and share a median turning lane with an oncoming vehicle.", "detail": "You may enter even if an oncoming vehicle is already using it, but must give way to it, slowing down and stopping if necessary." }
         ],
         "bullets": [],
-        "tables": [
-          {
-            "title": "Key points",
-            "headers": ["Point"],
-            "rows": [
-              ["A shared centre lane for vehicles from either direction turning right into a side road, driveway or property access — marked by signs or arrows."]
-            ]
-          }
-        ]
+        "tables": []
       },
       {
         "title": "Bicycle lanes",
