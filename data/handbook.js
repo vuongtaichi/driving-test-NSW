@@ -1966,7 +1966,7 @@ window.HANDBOOK = [
         "title": "Breakdowns",
         "page": 177,
         "figures": [
-          { "src": "images-handbook/emergency-stopping-lane-sign.jpg", "caption": "'Emergency stopping lane only' sign." },
+          { "src": "images-handbook/emergency-stopping-lane-sign.jpg", "caption": "'Emergency stopping lane only' sign.", "detail": "If you break down: pull over safely (shoulder, emergency stopping lane, breakdown lane), park as far left as possible, hazard lights on, stay in the vehicle belted, call roadside assistance." },
           { "src": "images-handbook/warning-triangle-photo.jpg", "caption": "Warning triangle on the road. Slow down." }
         ],
         "bullets": [],
@@ -1976,7 +1976,6 @@ window.HANDBOOK = [
             "headers": ["Point"],
             "rows": [
               ["Reduce breakdown risk: check fuel/oil/water/tyre pressure (incl. spare) regularly; carry a hi-vis vest and torch."],
-              ["If you break down: pull over safely (shoulder, emergency stopping lane, breakdown lane), park as far left as possible, hazard lights on, stay in the vehicle belted, call roadside assistance."],
               ["If you must exit: check for traffic first, exit on the safer side, stand clear behind a safety barrier if possible, don't change a tyre unless it's safe."],
               ["In a tunnel: pull into the breakdown bay, hazard lights and radio on, stay in the vehicle and wait — major tunnels are constantly monitored."]
             ]
@@ -2080,7 +2079,7 @@ window.HANDBOOK = [
         "page": 182,
         "figures": [
           { "src": "images-handbook/highbeam-behind-vehicle.jpg", "caption": "Turn your headlights to low beam when driving within 200m behind another vehicle." },
-          { "src": "images-handbook/highbeam-oncoming-vehicle.jpg", "caption": "Turn your headlights to low beam when a vehicle is coming towards you within 200m." }
+          { "src": "images-handbook/highbeam-oncoming-vehicle.jpg", "caption": "Turn your headlights to low beam when a vehicle is coming towards you within 200m.", "detail": "If dazzled by oncoming high beam, look to the left edge of your lane, and slow down or stop out of the traffic line until your eyes recover." }
         ],
         "figuresGrid": { "cols": 1 },
         "bullets": [],
@@ -2091,7 +2090,7 @@ window.HANDBOOK = [
             "rows": [
               ["About a third of crashes happen at night — pedestrians, bikes and motorcycles are harder to see."],
               ["At night, or whenever there's not enough light to see a person in dark clothing at 100m, your vehicle must clearly show headlights, tail lights, number plates, and any fitted clearance/side marker lights."],
-              ["Don't use or fit dazzling or distracting lights. If dazzled by oncoming high beam, look to the left edge of your lane, and slow down or stop out of the traffic line until your eyes recover."]
+              ["Don't use or fit dazzling or distracting lights."]
             ]
           },
           {
